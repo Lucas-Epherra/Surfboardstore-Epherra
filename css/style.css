@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+/* color de las letras de enlaces */
+
+a {
+  color: black;
+}
+
+/* index.html ( First Mobile (L)(425px) */
+
+.containerGrid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 25vw);
+
+  grid-template-rows: repeat(8, 12.5vh);
+
+  grid-template-areas:
+    "headerMods headerMods headerMods headerMods"
+    "bannerMain bannerMain bannerMain bannerMain"
+    "boxShop boxShop quienesBox quienesBox"
+    "boxShop boxShop quienesBox quienesBox"
+    "bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain"
+    "ubicacionBox ubicacionBox contactBox contactBox"
+    "ubicacionBox ubicacionBox contactBox contactBox"
+    "footerDesign footerDesign footerDesign footerDesign";
+
+  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+  background-size: cover;
+}
+
+
+/* comienzo de header (all) */
+
+.headerMods {
+  grid-area: headerMods;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33vw);
+  grid-template-rows: repeat(3, 4.16vh);
+
+  grid-template-areas:
+    ". headerLogo ."
+    ". . ."
+    ". menuNavbar .";
+  z-index: 8;
+  background-color: #484450;
+  height: 12.5vh;
+  width: 100%;
+  position: sticky;
+  border-bottom: black solid 1px;
+
+}
+
+.headerLogo {
+  grid-area: headerLogo;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+
+.logoImg {
+  height: 55px;
+  width: 200px;
+}
+
+
+.menuNavbar {
+  display: flex;
+  grid-area: menuNavbar;
+  width: 100vw;
+  height: 12.5vh;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+
+.listNavbar {
+  display: flex;
+  border-radius: 15px;
+  background-color: #c4c8c5;
+  font-weight: 400;
+  border: solid 2px;
+  border-color: rgb(0, 0, 0);
+  padding: 5px;
+  z-index: 9;
+  max-height: 27px;
+  max-width: 100vw;
+  margin-bottom: 5px;
+  height: 27px;
+  align-items: center;
+}
+
+
+/* banner main (index.html) */
+.bannerMain {
+  grid-area: bannerMain;
+  max-width: 100vw;
+  max-height: 12.5vh;
+
+}
+
+.bannerSize {
+  display: flex;
+  width: 100vw;
+  max-height: 12.5vh;
+  border-bottom: black solid 1px;
+  border-top: 1px black solid;
+}
+
+/* imagen shop_tablas + texto y url acceso */
+.boxShop {
+  grid-area: boxShop;
+  background-image: url('../imagenes/garaje\ uva.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 15px;
+  border: #777a7ac6 solid 3px;
+  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.textBox {
+  background-color: #c4c8c554;
+  color: black;
+  font-weight: 600;
+  border: black 1.5px solid;
+  border-radius: 5%;
+  margin-top: 10px;
+  font-size: medium;
+  padding: 8px;
+
+}
+
+/* imagen quienes_somos + texto y url acceso */
+.quienesBox {
+  grid-area: quienesBox;
+  background-image: url('../imagenes/MAE.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 15px;
+  border: #777a7ac6 solid 3px;
+  border-radius: 10%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+
+
+
+/* banner mitad de main (index.html) */
+.bannerMitadMain {
+  grid-area: bannerMitadMain;
+  max-width: 100vw;
+  max-height: 12.5vh;
+
+}
+
+
+
+/* imagen de ubicacion + texto y link a como llegar */
+.ubicacionBox {
+  grid-area: ubicacionBox;
+  background-image: url('../imagenes/como\ llegar.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10%;
+  margin: 15px;
+  border: #777a7ac6 solid 3px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+.contactBox {
+  grid-area: contactBox;
+  background-image: url('../imagenes/Contactanosportutabla.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10%;
+  margin: 15px;
+  border: #777a7ac6 solid 3px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+/* footer (all) */
+
+.footerDesign {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33vw);
+  grid-template-rows: repeat(3, 4.16vh);
+  grid-template-areas:
+    ". footerLogo ."
+    ". . ."
+    ". listFooter .";
+  background-color: #484450;
+  max-width: 100vw;
+  max-height: 12.5vh;
+  z-index: 9;
+  grid-area: footerDesign;
+  border-top: black solid 1px;
+}
+
+.footerLogo {
+  display: flex;
+  max-width: 100vw;
+  max-height: 12.5vh;
+  grid-area: footerLogo;
+  justify-content: center;
+  align-content: flex-start;
+
+
+}
+
+.logoFooterImg {
+  height: 45px;
+}
+
+.menuFooter {
+  max-height: 12.5vh;
+  width: 100%;
+  display: flex;
+  max-width: 100vw;
+  grid-area: listFooter;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.listFooter {
+  font-weight: 400;
+  border-radius: 15px;
+  background-color: #c4c8c5;
+  border: black solid 2px;
+  display: flex;
+  max-height: 30px;
+  font-size: smaller;
+  margin-bottom: 6px;
+  padding: 5px;
+  align-items: center;
+
+}
+
+
+
+/* Media query celulares S y M (ya lo hice first mobile, esto es para verlo bien en mi celu) */
+
+@media (max-width:424px) {
+
+  .menuNavbar {
+    display: flex;
+    grid-area: menuNavbar;
+    width: 100vw;
+    height: 12.5vh;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .listNavbar {
+    display: flex;
+    border-radius: 15px;
+    background-color: #c4c8c5;
+    border: solid 2px;
+    border-color: rgb(0, 0, 0);
+    z-index: 9;
+    max-height: 27px;
+    max-width: 100vw;
+    margin-bottom: 5px;
+    font-size: smaller;
+    padding: 2px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* media query para tablets (768px) */
+
+@media (min-width:767px) {
+
+  .containerGrid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 25vw);
+
+    grid-template-rows: repeat(12, 8.33vh);
+
+    grid-template-areas:
+      "headerMods headerMods headerMods headerMods"
+      "bannerMain bannerMain bannerMain bannerMain"
+      "bannerMain bannerMain bannerMain bannerMain"
+      "boxShop boxShop quienesBox quienesBox"
+      "boxShop boxShop quienesBox quienesBox"
+      "boxShop boxShop quienesBox quienesBox"
+      "bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain"
+      "bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain"
+      "ubicacionBox ubicacionBox contactBox contactBox"
+      "ubicacionBox ubicacionBox contactBox contactBox"
+      "ubicacionBox ubicacionBox contactBox contactBox"
+      "footerDesign footerDesign footerDesign footerDesign";
+    background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+    background-size: cover;
+  }
+
+  /* comienzo de header (all) */
+
+  .headerMods {
+    grid-area: headerMods;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33vw);
+    grid-template-rows: repeat(4, 2.08vh);
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      "headerLogo . menuNavbar"
+      ". . .";
+    z-index: 8;
+    background-color: #484450;
+    height: 8.33vh;
+    width: 100vw;
+    position: sticky;
+    border-bottom: black solid 1px;
+
+  }
+
+  /* logo del header */
+  .headerLogo {
+    grid-area: headerLogo;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logoImg {
+    height: 55px;
+    width: 200px;
+  }
+
+  /* menu y lista del navbar */
+  .menuNavbar {
+    display: flex;
+    max-width: 100vw;
+    grid-area: menuNavbar;
+    width: 96vw;
+    justify-content: flex-end;
+    align-items: center;
+    height: 8.33vh;
+  }
+
+
+  .listNavbar {
+    display: flex;
+    border-radius: 15px;
+    background-color: #c4c8c5;
+    font-weight: 400;
+    border: solid 1.5px;
+    border-color: rgb(0, 0, 0);
+    z-index: 9;
+    max-height: 27px;
+    max-width: 100vw;
+    height: 27px;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* banner main (index.html) */
+  .bannerMain {
+    grid-area: bannerMain;
+    max-width: 100vw;
+    max-height: 16.66vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* tamaño de los banner */
+  .bannerSize {
+    width: 100vw;
+    max-height: 16.66vh;
+  }
+
+  /* banner mitad de main (index.html) */
+  .bannerMitadMain {
+    grid-area: bannerMitadMain;
+    max-width: 100vw;
+    max-height: 16.66vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* footer (all) */
+  .footerDesign {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33vw);
+    grid-template-rows: repeat(4, 2vh);
+    grid-template-areas:
+      "footerLogo . ."
+      ". . ."
+      " . . listFooter"
+      ". . .";
+    background-color: #484450;
+    max-width: 100vw;
+    max-height: 8.33vh;
+    z-index: 9;
+    grid-area: footerDesign;
+    border-top: black solid 1px;
+  }
+
+  /* logo del footer */
+  .footerLogo {
+    display: flex;
+    max-width: 100vw;
+    max-height: 8.33vh;
+    grid-area: footerLogo;
+    justify-content: center;
+    height: 7vh;
+    align-items: center;
+
+  }
+
+  .logoFooterImg {
+    height: 42px;
+    width: 200px;
+  }
+
+  .footerLogoUrl {
+    height: 30px;
+
+  }
+
+  /* menu y lista del footer */
+  .menuFooter {
+    max-height: 12.5vh;
+    width: 100%;
+    display: flex;
+    max-width: 100vw;
+    grid-area: listFooter;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .listFooter {
+    font-weight: 400;
+    border-radius: 15px;
+    background-color: #c4c8c5;
+    border: black solid 2px;
+    display: flex;
+    max-height: 30px;
+    font-size: smaller;
+    margin-bottom: 6px;
+    padding: 3px;
+    align-items: center;
+  }
+
+}
+
+/* media query para laptop L (1440px) */
+
+@media (min-width:1023px) {
+
+  .containerGrid {
+    display: grid;
+
+    grid-template-columns: repeat(12, 8.33vw);
+
+    grid-template-rows: repeat(12, 8.33vh);
+
+    grid-template-areas:
+      "headerMods headerMods headerMods headerMods headerMods headerMods headerMods headerMods headerMods headerMods headerMods headerMods"
+      "bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain"
+      "bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain"
+      ". boxShop boxShop boxShop boxShop boxShop  quienesBox quienesBox quienesBox quienesBox quienesBox ."
+      ". boxShop boxShop boxShop boxShop boxShop  quienesBox quienesBox quienesBox quienesBox quienesBox ."
+      ". boxShop boxShop boxShop boxShop boxShop  quienesBox quienesBox quienesBox quienesBox quienesBox ."
+      "bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain"
+      "bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain"
+      ". ubicacionBox ubicacionBox ubicacionBox ubicacionBox ubicacionBox contactBox contactBox contactBox contactBox contactBox ."
+      ". ubicacionBox ubicacionBox ubicacionBox ubicacionBox ubicacionBox contactBox contactBox contactBox contactBox contactBox ."
+      ". ubicacionBox ubicacionBox ubicacionBox ubicacionBox ubicacionBox contactBox contactBox contactBox contactBox contactBox ."
+      "footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign";
+
+    background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+    background-size: cover;
+  }
+
+  /* comienzo de header (all) */
+
+  .headerMods {
+    grid-area: headerMods;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33vw);
+    grid-template-rows: repeat(4, 2.08vh);
+    grid-template-areas:
+      ". . ."
+      ". . menuNavbar"
+      "headerLogo . ."
+      ". . .";
+    z-index: 8;
+    background-color: #484450;
+    height: 8.33vh;
+    width: 100vw;
+    position: sticky;
+    border-bottom: black solid 1px;
+
+  }
+
+  /* logo del header */
+  .headerLogo {
+    grid-area: headerLogo;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* menu y lista del navbar */
+  .menuNavbar {
+    display: flex;
+    max-width: 100vw;
+    grid-area: menuNavbar;
+    width: 96vw;
+    height: 8.33vh;
+    align-items: center;
+    
+  }
+
+  .listNavbar {
+    display: flex;
+    border-radius: 15px;
+    background-color: #c4c8c5;
+    font-weight: 400;
+    border: solid 1.5px;
+    border-color: rgb(0, 0, 0);
+    z-index: 9;
+    max-height: 27px;
+    max-width: 100vw;
+    height: 27px;
+    align-items: center;
+    padding: 10px;
+    margin: 0px;
+  }
+
+  .textBox {
+    margin:0px;
+  }
+
+
+
+/* logo footer */
+
+  .footerLogo {
+    display: flex;
+    max-width: 100vw;
+    max-height: 12.5vh;
+    grid-area: footerLogo;
+    justify-content: center;
+    align-items: flex-start;
+  
+  }
+  
+  .logoFooterImg {
+    height: 50px;
+   
+  }
+
+  .menuFooter {
+    max-height: 12.5vh;
+    width: 100%;
+    display: flex;
+    max-width: 100vw;
+    grid-area: listFooter;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+  
+  .listFooter {
+    font-weight: 400;
+    border-radius: 15px;
+    background-color: #c4c8c5;
+    border: black solid 2px;
+    display: flex;
+    max-height: 30px;
+    font-size: smaller;
+    margin: 0px;
+    padding: 5px;
+    align-items: center;
+  
+  }
+  
+}
+
+/* PAGINA SHOP_TABLAS FIRST MOBILE (L)(425px) */
+.fondoMain {
+  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+  background-size: cover;
+  
+}
+
+.principalBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+
+.tituloBox {
+  display: flex;
+  justify-content: center;
+}
+
+.tituloShop {
+  background-color: #34baab;
+  border: black solid 5px;
+  border-radius: 15px;
+  margin-top: 15px;
+  height: 50px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+/* contenedores de (shop_tablas)  */
+
+.colorBoxes {
+  background-color: dimgrey;
+  border: solid black;
+  border-radius: 2%;
+
+}
+
+.textBoxes {
+  background-color: #c4c8c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-radius: 15px;
+  height: 50px;
+  padding: 5px;
+  border: solid black;
+  margin-left: 25%;
+  margin-top: 5px;
+
+}
+
+.tablasBox {
+  height: 500px;
+  width: 400px;
+}
+
+.tablaImg {
+margin-left: 10%;
+height: 80%;
+
+}
+
