@@ -11,43 +11,18 @@
 
 
 /* color de las letras de enlaces */
-
 a {
   color: black;
 }
 
-/* index.html ( First Mobile (L)(425px) */
-
-.containerGrid {
-  display: grid;
-
-  grid-template-columns: repeat(4, 25vw);
-
-  grid-template-rows: repeat(8, 12.5vh);
-
-  grid-template-areas:
-    "headerMods headerMods headerMods headerMods"
-    "bannerMain bannerMain bannerMain bannerMain"
-    "boxShop boxShop quienesBox quienesBox"
-    "boxShop boxShop quienesBox quienesBox"
-    "bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain"
-    "ubicacionBox ubicacionBox contactBox contactBox"
-    "ubicacionBox ubicacionBox contactBox contactBox"
-    "footerDesign footerDesign footerDesign footerDesign";
-
-  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
-  background-size: cover;
-}
-
+/* --------------------------------------- index.html ( First Mobile (L)(425px) ------------------------------------ */
 
 /* comienzo de header (all) */
-
 .headerMods {
   grid-area: headerMods;
   display: grid;
   grid-template-columns: repeat(3, 33.33vw);
   grid-template-rows: repeat(3, 4.16vh);
-
   grid-template-areas:
     ". headerLogo ."
     ". . ."
@@ -61,22 +36,21 @@ a {
 
 }
 
+/* logo header */
 .headerLogo {
   grid-area: headerLogo;
   z-index: 9;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
 }
-
 
 .logoImg {
   height: 55px;
   width: 200px;
 }
 
-
+/* lista header */
 .menuNavbar {
   display: flex;
   grid-area: menuNavbar;
@@ -86,7 +60,6 @@ a {
   justify-content: center;
 
 }
-
 
 .listNavbar {
   display: flex;
@@ -104,105 +77,135 @@ a {
   align-items: center;
 }
 
-
-/* banner main (index.html) */
-.bannerMain {
-  grid-area: bannerMain;
-  max-width: 100vw;
-  max-height: 12.5vh;
-
-}
-
-.bannerSize {
-  display: flex;
-  width: 100vw;
-  max-height: 12.5vh;
-  border-bottom: black solid 1px;
-  border-top: 1px black solid;
-}
-
-/* imagen shop_tablas + texto y url acceso */
-.boxShop {
-  grid-area: boxShop;
-  background-image: url('../imagenes/garaje\ uva.jpg');
+/* fondo contenedores principales */
+.fondoMain {
+  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
-  margin: 15px;
-  border: #777a7ac6 solid 3px;
-  border-radius: 10%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
 
+.principalBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* titulo principal */
+.tituloIndexBox {
+  display: flex;
+  justify-content: center;
+  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+}
+
+.title {
+  margin-top: 2vh;
+  text-align: center;
+  color: #939493;
+  background-color: black;
+  border: #c4c8c5 2.5px solid;
+  border-radius: 5%;
+  margin-bottom: 3vh;
+  padding: 10px;
+  font-style: italic;
+  width: fit-content;
+
+}
+
+/* cajas de textos */
 .textBox {
   background-color: #c4c8c554;
   color: black;
   font-weight: 600;
   border: black 1.5px solid;
   border-radius: 5%;
-  margin-top: 10px;
   font-size: medium;
-  padding: 8px;
+  padding: 10px;
+  text-align: center;
+  width: fit-content;
+}
 
+/* imagenes de intex.html */
+.imagenes {
+  height: 30vh;
+  border: black solid 2px;
+  margin-bottom: 2vh;
+  border-radius: 5%;
+}
+
+
+
+/* banner main (index.html) */
+.bannerMain {
+
+  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+
+}
+
+.bannerSize {
+  width: 100vw;
+  border-bottom: black solid 2px;
+  border-top: 1px black solid;
+}
+
+/* imagen shop_tablas + texto y url acceso */
+.boxShop {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+.textShopPosition {
+  position: absolute;
+  top: 4.5rem;
+  left: 31%;
+  right: 31%;
 }
 
 /* imagen quienes_somos + texto y url acceso */
+
 .quienesBox {
-  grid-area: quienesBox;
-  background-image: url('../imagenes/MAE.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 15px;
-  border: #777a7ac6 solid 3px;
-  border-radius: 10%;
   justify-content: center;
-  align-items: center;
   display: flex;
+  position: relative;
 }
 
-
-
-
-
-/* banner mitad de main (index.html) */
-.bannerMitadMain {
-  grid-area: bannerMitadMain;
-  max-width: 100vw;
-  max-height: 12.5vh;
-
+.textPositionQuienes {
+  position: absolute;
+  top: 4.5rem;
+  left: 25%;
+  right: 25%;
 }
-
-
 
 /* imagen de ubicacion + texto y link a como llegar */
+
 .ubicacionBox {
-  grid-area: ubicacionBox;
-  background-image: url('../imagenes/como\ llegar.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 10%;
-  margin: 15px;
-  border: #777a7ac6 solid 3px;
   justify-content: center;
-  align-items: center;
   display: flex;
+  position: relative;
 }
 
+.textUbiPosition {
+  position: absolute;
+  top: 4.5rem;
+  left: 32%;
+  right: 32%;
+}
+
+/* imagen de contacto + texto y link url */
 
 .contactBox {
-  grid-area: contactBox;
-  background-image: url('../imagenes/Contactanosportutabla.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 10%;
-  margin: 15px;
-  border: #777a7ac6 solid 3px;
   justify-content: center;
-  align-items: center;
   display: flex;
+  position: relative;
 }
 
+.textContactPosition {
+  position: absolute;
+  top: 4.5rem;
+  left: 30%;
+  right: 30%;
+
+}
 
 /* footer (all) */
 
@@ -261,378 +264,26 @@ a {
 
 }
 
+/* ---------------------------- PAGINA SHOP_TABLAS FIRST MOBILE (L)(425px) ------------------------------------------ */
 
 
-/* Media query celulares S y M (ya lo hice first mobile, esto es para verlo bien en mi celu) */
-
-@media (max-width:424px) {
-
-  .menuNavbar {
-    display: flex;
-    grid-area: menuNavbar;
-    width: 100vw;
-    height: 12.5vh;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  .listNavbar {
-    display: flex;
-    border-radius: 15px;
-    background-color: #c4c8c5;
-    border: solid 2px;
-    border-color: rgb(0, 0, 0);
-    z-index: 9;
-    max-height: 27px;
-    max-width: 100vw;
-    margin-bottom: 5px;
-    font-size: smaller;
-    padding: 2px;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-/* media query para tablets (768px) */
-
-@media (min-width:767px) {
-
-  .containerGrid {
-    display: grid;
-
-    grid-template-columns: repeat(4, 25vw);
-
-    grid-template-rows: repeat(12, 8.33vh);
-
-    grid-template-areas:
-      "headerMods headerMods headerMods headerMods"
-      "bannerMain bannerMain bannerMain bannerMain"
-      "bannerMain bannerMain bannerMain bannerMain"
-      "boxShop boxShop quienesBox quienesBox"
-      "boxShop boxShop quienesBox quienesBox"
-      "boxShop boxShop quienesBox quienesBox"
-      "bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain"
-      "bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain"
-      "ubicacionBox ubicacionBox contactBox contactBox"
-      "ubicacionBox ubicacionBox contactBox contactBox"
-      "ubicacionBox ubicacionBox contactBox contactBox"
-      "footerDesign footerDesign footerDesign footerDesign";
-    background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
-    background-size: cover;
-  }
-
-  /* comienzo de header (all) */
-
-  .headerMods {
-    grid-area: headerMods;
-    display: grid;
-    grid-template-columns: repeat(3, 33.33vw);
-    grid-template-rows: repeat(4, 2.08vh);
-    grid-template-areas:
-      ". . ."
-      ". . ."
-      "headerLogo . menuNavbar"
-      ". . .";
-    z-index: 8;
-    background-color: #484450;
-    height: 8.33vh;
-    width: 100vw;
-    position: sticky;
-    border-bottom: black solid 1px;
-
-  }
-
-  /* logo del header */
-  .headerLogo {
-    grid-area: headerLogo;
-    z-index: 9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logoImg {
-    height: 55px;
-    width: 200px;
-  }
-
-  /* menu y lista del navbar */
-  .menuNavbar {
-    display: flex;
-    max-width: 100vw;
-    grid-area: menuNavbar;
-    width: 96vw;
-    justify-content: flex-end;
-    align-items: center;
-    height: 8.33vh;
-  }
-
-
-  .listNavbar {
-    display: flex;
-    border-radius: 15px;
-    background-color: #c4c8c5;
-    font-weight: 400;
-    border: solid 1.5px;
-    border-color: rgb(0, 0, 0);
-    z-index: 9;
-    max-height: 27px;
-    max-width: 100vw;
-    height: 27px;
-    align-items: center;
-    padding: 10px;
-  }
-
-  /* banner main (index.html) */
-  .bannerMain {
-    grid-area: bannerMain;
-    max-width: 100vw;
-    max-height: 16.66vh;
-    display: flex;
-    justify-content: center;
-  }
-
-  /* tamaño de los banner */
-  .bannerSize {
-    width: 100vw;
-    max-height: 16.66vh;
-  }
-
-  /* banner mitad de main (index.html) */
-  .bannerMitadMain {
-    grid-area: bannerMitadMain;
-    max-width: 100vw;
-    max-height: 16.66vh;
-    display: flex;
-    justify-content: center;
-  }
-
-  /* footer (all) */
-  .footerDesign {
-    display: grid;
-    grid-template-columns: repeat(3, 33.33vw);
-    grid-template-rows: repeat(4, 2vh);
-    grid-template-areas:
-      "footerLogo . ."
-      ". . ."
-      " . . listFooter"
-      ". . .";
-    background-color: #484450;
-    max-width: 100vw;
-    max-height: 8.33vh;
-    z-index: 9;
-    grid-area: footerDesign;
-    border-top: black solid 1px;
-  }
-
-  /* logo del footer */
-  .footerLogo {
-    display: flex;
-    max-width: 100vw;
-    max-height: 8.33vh;
-    grid-area: footerLogo;
-    justify-content: center;
-    height: 7vh;
-    align-items: center;
-
-  }
-
-  .logoFooterImg {
-    height: 42px;
-    width: 200px;
-  }
-
-  .footerLogoUrl {
-    height: 30px;
-
-  }
-
-  /* menu y lista del footer */
-  .menuFooter {
-    max-height: 12.5vh;
-    width: 100%;
-    display: flex;
-    max-width: 100vw;
-    grid-area: listFooter;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  .listFooter {
-    font-weight: 400;
-    border-radius: 15px;
-    background-color: #c4c8c5;
-    border: black solid 2px;
-    display: flex;
-    max-height: 30px;
-    font-size: smaller;
-    margin-bottom: 6px;
-    padding: 3px;
-    align-items: center;
-  }
-
-}
-
-/* media query para laptop L (1440px) */
-
-@media (min-width:1023px) {
-
-  .containerGrid {
-    display: grid;
-
-    grid-template-columns: repeat(12, 8.33vw);
-
-    grid-template-rows: repeat(12, 8.33vh);
-
-    grid-template-areas:
-      "headerMods headerMods headerMods headerMods headerMods headerMods headerMods headerMods headerMods headerMods headerMods headerMods"
-      "bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain"
-      "bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain bannerMain"
-      ". boxShop boxShop boxShop boxShop boxShop  quienesBox quienesBox quienesBox quienesBox quienesBox ."
-      ". boxShop boxShop boxShop boxShop boxShop  quienesBox quienesBox quienesBox quienesBox quienesBox ."
-      ". boxShop boxShop boxShop boxShop boxShop  quienesBox quienesBox quienesBox quienesBox quienesBox ."
-      "bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain"
-      "bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain bannerMitadMain"
-      ". ubicacionBox ubicacionBox ubicacionBox ubicacionBox ubicacionBox contactBox contactBox contactBox contactBox contactBox ."
-      ". ubicacionBox ubicacionBox ubicacionBox ubicacionBox ubicacionBox contactBox contactBox contactBox contactBox contactBox ."
-      ". ubicacionBox ubicacionBox ubicacionBox ubicacionBox ubicacionBox contactBox contactBox contactBox contactBox contactBox ."
-      "footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign footerDesign";
-
-    background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
-    background-size: cover;
-  }
-
-  /* comienzo de header (all) */
-
-  .headerMods {
-    grid-area: headerMods;
-    display: grid;
-    grid-template-columns: repeat(3, 33.33vw);
-    grid-template-rows: repeat(4, 2.08vh);
-    grid-template-areas:
-      ". . ."
-      ". . menuNavbar"
-      "headerLogo . ."
-      ". . .";
-    z-index: 8;
-    background-color: #484450;
-    height: 8.33vh;
-    width: 100vw;
-    position: sticky;
-    border-bottom: black solid 1px;
-
-  }
-
-  /* logo del header */
-  .headerLogo {
-    grid-area: headerLogo;
-    z-index: 9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-
-  /* menu y lista del navbar */
-  .menuNavbar {
-    display: flex;
-    max-width: 100vw;
-    grid-area: menuNavbar;
-    width: 96vw;
-    height: 8.33vh;
-    align-items: center;
-    
-  }
-
-  .listNavbar {
-    display: flex;
-    border-radius: 15px;
-    background-color: #c4c8c5;
-    font-weight: 400;
-    border: solid 1.5px;
-    border-color: rgb(0, 0, 0);
-    z-index: 9;
-    max-height: 27px;
-    max-width: 100vw;
-    height: 27px;
-    align-items: center;
-    padding: 10px;
-    margin: 0px;
-  }
-
-  .textBox {
-    margin:0px;
-  }
-
-
-
-/* logo footer */
-
-  .footerLogo {
-    display: flex;
-    max-width: 100vw;
-    max-height: 12.5vh;
-    grid-area: footerLogo;
-    justify-content: center;
-    align-items: flex-start;
-  
-  }
-  
-  .logoFooterImg {
-    height: 50px;
-   
-  }
-
-  .menuFooter {
-    max-height: 12.5vh;
-    width: 100%;
-    display: flex;
-    max-width: 100vw;
-    grid-area: listFooter;
-    justify-content: space-evenly;
-    align-items: flex-end;
-  }
-  
-  .listFooter {
-    font-weight: 400;
-    border-radius: 15px;
-    background-color: #c4c8c5;
-    border: black solid 2px;
-    display: flex;
-    max-height: 30px;
-    font-size: smaller;
-    margin: 0px;
-    padding: 5px;
-    align-items: center;
-  
-  }
-  
-}
-
-/* PAGINA SHOP_TABLAS FIRST MOBILE (L)(425px) */
-.fondoMain {
-  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
-  background-size: cover;
-  
+.containerMainShop {
+  display: none;
 }
 
 .principalBox {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
-
-
-
-.tituloBox {
+.tituloShopBox {
   display: flex;
   justify-content: center;
+  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+  background-size: cover;
 }
 
-.tituloShop {
-  background-color: #34baab;
+.tituloSurfboards {
+  background-color: #c4c8c5;
   border: black solid 5px;
   border-radius: 15px;
   margin-top: 15px;
@@ -640,16 +291,11 @@ a {
   margin-bottom: 15px;
   display: flex;
   align-items: center;
+  padding: 10px;
+  font-size: larger;
 }
 
 /* contenedores de (shop_tablas)  */
-
-.colorBoxes {
-  background-color: dimgrey;
-  border: solid black;
-  border-radius: 2%;
-
-}
 
 .textBoxes {
   background-color: #c4c8c5;
@@ -666,14 +312,462 @@ a {
 
 }
 
+.colorBoxes {
+  background-color: dimgrey;
+  border: solid black;
+  border-radius: 2%;
+
+}
+
 .tablasBox {
   height: 500px;
   width: 400px;
 }
 
 .tablaImg {
-margin-left: 10%;
-height: 80%;
+  margin-left: 10%;
+  height: 80%;
 
 }
 
+/* ---------------------------------- PAGINA QUIENES_SOMOS FIRST MOBILE(425PX) ------------------------------------- */
+
+.textQuienesSomosBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tituloQuienesBox {
+  display: flex;
+  justify-content: center;
+}
+
+.tituloQuienes {
+  background-color: #c4c8c5;
+  border: black solid 5px;
+  margin-top: 15px;
+  padding: 7px;
+  border-radius: 10%;
+  font-size: larger;
+}
+
+.parrafoUnoBox {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+.parrafoUno {
+  background-color: #c4c8c5;
+}
+
+.imagenesBox {
+  display: flex;
+  justify-content: center;
+}
+
+.imagenUno {
+  height: 60vh;
+  border: black solid 9px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.parrafoDosBox {
+  width: 100vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.parrafoDos {
+  background-color: #c4c8c5;
+}
+
+.imagenDos {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 60vh;
+  display: flex;
+  border: black solid 9px;
+}
+
+.parrafoTresBox {
+  display: flex;
+  width: 100vw;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.parrafoTres {
+  background-color: #c4c8c5;
+}
+
+/* ---------------------------------- PAGINA UBICACION.HTML FIRST MOBILE (425PX) ------------------------------------ */
+
+.tituloUbiBox {
+  display: flex;
+  justify-content: center;
+}
+
+.tituloUbicacion {
+  background-color: #c4c8c5;
+  padding: 10px;
+  border-radius: 40px;
+  border: black solid 5px;
+  margin: 10px;
+  font-size: larger;
+}
+
+.mapaBox {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  margin: 15px 15px 0px 15px;
+}
+
+.mapaIframe {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* ---------------------------------- PAGINA CONTACTO.html FIRST MOBILE (425px) ------------------------------------- */
+
+
+.tituloContactBox {
+  display: flex;
+  justify-content: center;
+}
+
+.contactoTitulo {
+  background-color: #c4c8c5;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  border: black solid 5px;
+  border-radius: 30px;
+  font-size: larger;
+}
+
+
+.formBox {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 95vh;
+  border-radius: 15px;
+}
+
+.formulario {
+  align-self: center;
+  background-color: #939493;
+  border: black double 7px;
+  padding: 15px;
+
+}
+
+/* ------------------- Media query celulares S y M (afecta solo a la lista del menu) ------------------------------- */
+@media (max-width:424px) {
+  .listNavbar {
+    font-size: smaller;
+    padding: 2px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/*------------------------------------ media query para tablets (768px) ---------------------------------------------*/
+
+@media (min-width:767px) {
+
+  /*  ------------------------------------------- inicia index html (768px) ----------------------------------------- */
+
+  .principalBox {
+    display: none;
+  }
+
+  .containerMain {
+    grid-area: containerMain;
+    display: grid;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(4, 15.62vh);
+    grid-template-areas:
+
+      "boxShop boxShop quienesBox quienesBox"
+      "boxShop boxShop quienesBox quienesBox"
+      "ubicacionBox ubicacionBox contactBox contactBox"
+      "ubicacionBox ubicacionBox contactBox contactBox";
+  }
+
+  .bannerMain {
+    grid-area: bannerMain;
+  }
+
+  .bannerSize {
+    height: 100%;
+  }
+
+  .imagenes {
+    width: 45vw;
+    max-height: 25vh;
+    margin: 0px 10px 0px 10px;
+  }
+
+  .tituloIndexBox {
+    grid-area: tituloIndexBox;
+    align-items: center;
+    font-size: small;
+    margin-bottom: 0px;
+    padding: 15px;
+  }
+
+
+  /* shop */
+  .boxShop {
+    display: flex;
+    grid-area: boxShop;
+    margin-top: 7px;
+  }
+
+  .textShopPosition {
+    top: 3.5rem;
+    left: 38%;
+    right: 38%;
+  }
+
+  /* quienesSomos */
+  .quienesBox {
+    display: flex;
+    grid-area: quienesBox;
+    margin-top: 7px;
+  }
+
+  .textPositionQuienes {
+    top: 3.5rem;
+    left: 34%;
+    right: 34%;
+  }
+
+  /* ubicacion */
+  .ubicacionBox {
+    display: flex;
+    grid-area: ubicacionBox;
+    margin-top: 7px;
+  }
+
+  .textUbiPosition {
+    top: 3.5rem;
+    left: 38%;
+    right: 38%;
+  }
+
+  /* contacto */
+  .contactBox {
+    display: flex;
+    grid-area: contactBox;
+    margin-top: 7px;
+  }
+
+  .textContactPosition {
+    top: 3.5rem;
+    left: 37%;
+    right: 37%;
+
+  }
+
+  /* ------------------------------------- inicio shop_Tablas.html (768px)------------------------------------------- */
+  .containerMainShop {
+    display: grid;
+    grid-area: containerMainShop;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(4, 15.62vh);
+    grid-template-areas:
+
+      "carrasco round  funboard longboard"
+      ". . . ."
+      ". . . ."
+      ". . . .";
+  }
+
+  .carrasco {
+    grid-area: carrasco;
+  }
+
+  .round {
+    grid-area: round;
+  }
+
+  .funboard {
+    grid-area: funboard;
+  }
+
+  .longboard {
+    grid-area: longboard;
+  }
+
+  /* contenedores de (shop_tablas)  */
+
+  .tablasBox {
+    height: 56vh;
+    width: 25vw;
+  }
+
+  .tablaImg {
+    margin-left: 1rem;
+    height: 60%;
+  }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------------- media query para laptop L (1440px) ------------------------------------------------ */
+
+@media (min-width:1439px) {
+
+  /* ----------------------------------inicio de index.html (1440px)----------------------------------------------- */
+  .principalBox {
+    display: none;
+  }
+
+  .fondoMain {
+
+    background-image: url('../imagenes/https___www.lifeofpix.com_wp-content_uploads_2017_11_edited-32-of-66.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  .containerMain {
+    grid-area: containerMain;
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: 6.48vh 14vh 14vh 14vh 14vh;
+    grid-template-areas:
+      "tituloIndexBox tituloIndexBox"
+      "boxShop quienesBox "
+      "boxShop quienesBox "
+      "ubicacionBox contactBox"
+      "ubicacionBox contactBox";
+  }
+
+  .imagenes {
+    width: 25vw;
+  }
+
+
+  /* banner main (index.html) */
+  .bannerMain {
+    background-image: linear-gradient(to right, #f5c16e, #f7c26b, #f9c368, #fbc464, #fdc561, #fec65f, #fec75c, #ffc85a, #ffca58, #ffcb56, #ffcd53, #ffcf51);
+  }
+
+  .bannerSize {
+    height: 50vh;
+    border-bottom: black solid 1px;
+    border-top: 1px black solid;
+  }
+
+  .tituloIndexBox {
+    background-image: linear-gradient(to right, #f5c16e, #f7c26b, #f9c368, #fbc464, #fdc561, #fec65f, #fec75c, #ffc85a, #ffca58, #ffcb56, #ffcd53, #ffcf51);
+    text-align: center;
+    align-items: center;
+    font-size: medium;
+  }
+
+  /* shop */
+
+  .textShopPosition {
+    top: 3.5rem;
+    left: 43%;
+    right: 43%;
+  }
+
+  /* quienesSomos */
+
+  .textPositionQuienes {
+    top: 3.5rem;
+    left: 40%;
+    right: 40%;
+  }
+
+  /* ubicacion */
+
+  .textUbiPosition {
+    top: 3.5rem;
+    left: 43%;
+    right: 43%;
+  }
+
+  /* contacto */
+
+  .textContactPosition {
+    top: 3.5rem;
+    left: 42%;
+    right: 42%;
+
+  }
+
+  /*------------------------------------- INICIO shop_tablas.html (1440px) ---------------------------------------- */
+
+  .containerMainShop {
+    display: grid;
+    grid-area: containerMainShop;
+    grid-template-columns: repeat(4, 25vw);
+    grid-template-rows: repeat(4, 15.62vh);
+    grid-template-areas:
+
+      "carrasco round funboard longboard"
+      ". . . ."
+      ". . . ."
+      ". . . .";
+
+    background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+  }
+
+  .tablasBox {
+    height: 56vh;
+    width: 25vw;
+  }
+
+  .tablaImg {
+    margin-left: 4.2rem;
+    height: 60%;
+  }
+
+  /* ---------------------------------- INICIO quienes_somos.html (1440px)---------------------------------- */
+
+  .fondoDesktop {
+    background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+  }
+
+  /*------------------------------------- INICIO ubicacion.html (1440px) ---------------------------------------- */
+
+  .fondoUbi {
+    background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+  }
+
+  /*------------------------------------- INICIO Contacto.html (1440px) ---------------------------------------- */
+
+  .fondoContacto {
+    background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+  }
+}
