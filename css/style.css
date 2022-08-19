@@ -83,6 +83,7 @@ a {
   transform: scale(1,1.3);
 }
 
+
 .logoImg:hover {
   transform:scale(1.2,1.2) ;
  }
@@ -132,14 +133,30 @@ a {
   padding: 10px;
   text-align: center;
   width: fit-content;
+  z-index: 9;
 }
+
+/* -------animacion/efecto sobre las cajas de texto main de index.html------ */
+
+.textBox:hover {
+
+  transform:scale(1.5,1.3) ;
+  transition: 0.2s ease-in-out;
+  background-color:#34baab;
+  border:#4e4e4e63 outset 0.5px;
+  border-radius: 15%;
+  padding: 10px;
+
+}
+
 
 /* imagenes de intex.html */
 .imagenes {
   height: 30vh;
-  border: black solid 2px;
+  border:#939493 outset 5px;
   margin-bottom: 2vh;
   border-radius: 5%;
+
 }
 
 
@@ -353,6 +370,14 @@ a {
 .tablaImg {
   margin-left: 10%;
   height: 80%;
+}
+
+.tablaImg:hover {
+
+  transform: scale(1.2,1.1)
+ 
+  
+
 
 }
 
@@ -376,6 +401,7 @@ a {
   padding: 7px;
   border-radius: 10%;
   font-size: larger;
+  border-radius: 25px;
 }
 
 .parrafoUnoBox {
@@ -433,6 +459,13 @@ a {
 
 .parrafoTres {
   background-color: #c4c8c5;
+}
+
+/*-------------- efectos quienes_somos.html---------------- */
+.parrafos:hover{
+  background-color: #34baab;
+  font-weight: 700;
+  font-size: large;
 }
 
 /* ---------------------------------- PAGINA UBICACION.HTML FIRST MOBILE (425PX) ------------------------------------ */
@@ -494,11 +527,59 @@ a {
 
 .formulario {
   align-self: center;
-  background-color: #939493;
+  background-color: #4e4e4e;
   border: black double 7px;
   padding: 15px;
+  border-radius: 10px;
 
 }
+
+.boton {
+  background-color: #c4c8c5;
+  font-weight: 600;
+  padding: 2px;
+  border-radius: 10px;
+
+}
+
+.inputs{
+  background-color: #c4c8c5;
+  font-weight: 600;
+  padding: 2px;
+  border-radius: 10px;
+
+}
+
+
+
+
+/* ------- animaciones/efectos de contactanos.html ----------- */
+
+.boton:hover {
+  background-color: #34baab;
+  padding: 2px;
+  border-radius: 15px;
+  font-weight: 600;
+  border: 1px back solid;
+  
+}
+
+.inputs:hover {
+  background-color: #939493;
+  transition: 1ms;
+}
+
+
+.tituloContactBox {
+
+  transition: 3s;
+  transform: rotateY(360deg);
+  transition: ease-in-out;
+
+}
+
+
+
 
 /* ------------------- Media query celulares S y M y L (afecta solo a la lista del menu) ------------------------------- */
 @media (max-width:425px) {
@@ -821,3 +902,6 @@ a {
     background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
   }
 }
+
+/* ---------------------------------MEDIA QUERY 4k (2560px) --------------------------------------------------- */
+/* @media (min-width:2559px)  */
