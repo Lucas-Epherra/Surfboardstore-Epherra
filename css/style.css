@@ -12,7 +12,7 @@
 
 /* color de las letras de enlaces */
 a {
-  color: black ;
+  color: black;
 }
 
 /* --------------------------------------- index.html ( First Mobile (L)(425px) ------------------------------------ */
@@ -25,7 +25,7 @@ a {
 
 }
 
-/* botones del navbar (hovers) y personalizacion de botones*/
+/* -----------------botones del navbar (hovers) y personalizacion de botones*/
 .nav-link {
   color: rgba(255, 253, 253, 0.746);
   font-weight: 500;
@@ -34,16 +34,16 @@ a {
 
 .nav-link:hover {
   font-weight: 700;
-  background-color: #ffffff32;
+  background-color: #ffffff8b;
   color: rgb(0, 0, 0);
 
 }
 
 .navbar-toggler {
- border: black solid 1px;
+  border: black solid 1px;
 }
 
-/* boton inicio */
+/* -------------------------------------boton inicio */
 
 .active {
   color: rgba(255, 253, 253, 0.746) !important;
@@ -54,14 +54,15 @@ a {
 .active:hover {
   color: rgb(0, 0, 0) !important;
   font-weight: 700;
-  background-color: #ffffff32;
+  background-color: #ffffff8b;
 }
 
 
-/* fondo contenedores principales */
+/* -----------------------------fondo contenedores principales */
 .fondoMain {
   background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .principalBox {
@@ -69,70 +70,10 @@ a {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-
-/* titulo principal */
-.tituloIndexBox {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  margin-top: 2vh;
-  text-align: center;
-  color: #939493;
-  margin-bottom: 3vh;
-  font-style: italic;
-  width: fit-content;
-
-}
-
-/* cajas de textos */
-.textBox {
-  background-color: #c4c8c554;
-  color: black;
-  font-weight: 600;
-  border: black 1.5px solid;
-  border-radius: 5%;
-  font-size: medium;
-  padding: 10px;
-  text-align: center;
-  width: fit-content;
-  z-index: 9;
-  margin: 0px;
-}
-
-/* -------animacion/efecto sobre las cajas de texto main de index.html------ */
-
-.textBox:hover {
-
-  transform: scale(1.5, 1.3);
-  transition: 0.2s ease-in-out;
-  background-color: #34baab;
-  border: #4e4e4e63 outset 0.5px;
-  border-radius: 15%;
-  padding: 10px;
-
-}
-
-
-/* imagenes de intex.html */
-.imagenes {
-  height: 30vh;
-  border: #93949379 outset 2px;
-  margin-bottom: 2vh;
-  border-radius: 5%;
-
-}
-
-
 
 /* banner main (index.html) */
-.bannerMain {
-
-  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
-
-}
 
 .bannerSize {
   width: 100%;
@@ -140,64 +81,61 @@ a {
   border-top: 1px black solid;
 }
 
-/* imagen shop_tablas + texto y url acceso */
-.boxShop {
-  position: relative;
+/* -----------------------titulo principal */
+
+.tituloIndexBox {
   display: flex;
   justify-content: center;
+  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
 
 }
 
-.textShopPosition {
-  position: absolute;
-  top: 4.5rem;
-  left: 35%;
-  right: 35%;
+.title {
+  margin-top: 5vh;
+  text-align: center;
+  color: #c4c8c5;
+  font-weight: 800;
+  font-style: italic;
+  width: fit-content;
 }
 
-/* imagen quienes_somos + texto y url acceso */
+/* imagenes de index.html */
+.imagenes {
+  height: 30vh;
+  border: #93949379 outset 2px;
+  border-radius: 5%;
+}
 
-.quienesBox {
-  justify-content: center;
+/* botones del intex */
+.botonMain {
+  background-color: #c4c8c563;
+  border: #3a3c3b89 1px solid;
+}
+
+.botonMain:hover {
+  background-color: #dededebc;
+  border: rgb(0, 0, 0) 0.5px solid;
+  font-weight: 700;
+  transform: scale(1.1, 1.1);
+}
+
+/* card con imagen y boton url */
+
+.cardBox {
+  margin: 15px 15px 15px 15px;
+  padding: 10px;
+  background-color: #74747463;
+  border-radius: 5%;
   display: flex;
-  position: relative;
-}
-
-.textPositionQuienes {
-  position: absolute;
-  top: 4.5rem;
-  left: 32%;
-  right: 32%;
-}
-
-/* imagen de ubicacion + texto y link a como llegar */
-
-.ubicacionBox {
+  flex-direction: column;
   justify-content: center;
-  display: flex;
-  position: relative;
+  width: fit-content;
 }
 
-.textUbiPosition {
-  position: absolute;
-  top: 4.5rem;
-  left: 36.5%;
-  right: 36.5%;
-}
-
-/* imagen de contacto + texto y link url */
-
-.contactBox {
-  justify-content: center;
-  display: flex;
-  position: relative;
-}
-
-.textContactPosition {
-  position: absolute;
-  top: 4.5rem;
-  left: 35%;
-  right: 35%;
+.botonMain {
+  margin: 5px;
 
 }
 
@@ -501,27 +439,14 @@ a {
   transition: 1ms;
 }
 
-
-/* ------------------- Media query celulares S y M y L (afecta solo a la lista del menu) ------------------------------- */
-@media (max-width:425px) {
-  .listNavbar {
-    font-size: smaller;
-    padding: 2px;
-    align-items: center;
-    text-align: center;
-  }
-}
-
 /* ------------------- Media query celulares M (375px)  (afecta solo a las imagenes de las tablas) -------------------------- */
 @media (max-width:375px) {
   /* -------------------------------------------------seccion shop_Tablas--------------------------------- */
 
   .tablaImg {
     margin-left: 8%;
-
   }
 }
-
 
 /* ------------------- Media query celulares S (320px) (afecta solo a las imagenes de las tablas) -------------------------- */
 @media (max-width:320px) {
@@ -529,12 +454,8 @@ a {
 
   .tablaImg {
     margin-left: 3%;
-
   }
 }
-
-
-
 
 /*------------------------------------ media query para tablets (768px) ---------------------------------------------*/
 
@@ -543,22 +464,11 @@ a {
   /*  ------------------------------------------- inicia index html (768px) ----------------------------------------- */
 
   .principalBox {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .containerMain {
-    display: grid;
-    grid-template-columns: repeat(2, 40vw);
-    grid-template-rows: 6.48vh 14vh 14vh 14vh 14vh;
-    grid-template-areas:
-      "tituloIndexBox tituloIndexBox"
-      "boxShop quienesBox "
-      "boxShop quienesBox "
-      "ubicacionBox contactBox"
-      "ubicacionBox contactBox";
-  }
-
-  
   .fondoMain {
     background-image: url('../imagenes/https___www.lifeofpix.com_wp-content_uploads_2017_11_edited-32-of-66.jpg');
     background-repeat: no-repeat;
@@ -566,78 +476,20 @@ a {
     background-size: cover;
   }
 
-  .bannerSize {
-    height: 100%;
-  }
-
-  .imagenes {
-    width: 45vw;
-    max-height: 25vh;
-    margin: 0px 10px 0px 10px;
-  }
-
   .tituloIndexBox {
-    grid-area:tituloIndexBox;
     display: flex;
     width: 100%;
     text-align: center;
     align-items: center;
     font-size: medium;
-  }
-
-
-  /* shop */
-  .boxShop {
-    display: flex;
-    grid-area: boxShop;
-    margin-top: 7px;
-  }
-
-  .textShopPosition {
-    top: 3.5rem;
-    left: 38%;
-    right: 38%;
-  }
-
-  /* quienesSomos */
-  .quienesBox {
-    display: flex;
-    grid-area: quienesBox;
-    margin-top: 7px;
-  }
-
-  .textPositionQuienes {
-    top: 3.5rem;
-    left: 34%;
-    right: 34%;
-  }
-
-  /* ubicacion */
-  .ubicacionBox {
-    display: flex;
-    grid-area: ubicacionBox;
-    margin-top: 7px;
-  }
-
-  .textUbiPosition {
-    top: 3.5rem;
-    left: 38%;
-    right: 38%;
-  }
-
-  /* contacto */
-  .contactBox {
-    display: flex;
-    grid-area: contactBox;
-    margin-top: 7px;
-  }
-
-  .textContactPosition {
-    top: 3.5rem;
-    left: 37%;
-    right: 37%;
+    background-image: linear-gradient(90deg, rgba(250, 204, 116, 1) 0%, rgba(254, 204, 109, 1) 23%, rgba(255, 209, 108, 1) 52%, rgba(255, 211, 94, 1) 72%, rgba(255, 217, 70, 1) 100%);
 
   }
+
+  .title {
+    color: black;
+  }
+
 
   /* ------------------------------------- inicio shop_Tablas.html (768px)------------------------------------------- */
   .containerMainShop {
@@ -680,109 +532,26 @@ a {
     margin-left: 1rem;
     height: 60%;
   }
-
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
 /*-------------------------------- media query para laptop L (1440px) ------------------------------------------------ */
-
 @media (min-width:1439px) {
 
   /* ----------------------------------inicio de index.html (1440px)----------------------------------------------- */
-  
+
   .principalBox {
-    display:none;
+    display: flex;
+    padding: 3rem 8rem 8rem 8rem;
+    justify-content: space-between;
   }
 
-  .fondoMain {
-    background-image: url('../imagenes/https___www.lifeofpix.com_wp-content_uploads_2017_11_edited-32-of-66.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
- 
-  .containerMain {
-    display: grid;
-  }
- 
-  .imagenes {
-    width: 25vw;
-  }
-
-
-  /* banner main (index.html) */
-  .bannerMain {
-    background-image: linear-gradient(to right, #f5c16e, #f7c26b, #f9c368, #fbc464, #fdc561, #fec65f, #fec75c, #ffc85a, #ffca58, #ffcb56, #ffcd53, #ffcf51);
-  }
-
-  .bannerSize {
-    height: 50vh;
-    border-bottom: black solid 1px;
-    border-top: 1px black solid;
-  }
-
-  .tituloIndexBox {
-    background-image: linear-gradient(to right, #f5c16e, #f7c26b, #f9c368, #fbc464, #fdc561, #fec65f, #fec75c, #ffc85a, #ffca58, #ffcb56, #ffcd53, #ffcf51);
-    text-align: center;
-    align-items: center;
-    font-size: medium;
+  .cardBox {
+    margin:4rem;
   }
 
   .title {
-    background: none;
-    border:none;
-    color: #303030;
-    font-weight: 700;
-  }
-
-  .textBox {
-   margin: 0px;
-
-  }
-
-  /* shop */
-
-  .textShopPosition {
-    top: 3.5rem;
-    left: 43%;
-    right: 43%;
-  }
-
-
-  /* quienesSomos */
-
-  .textPositionQuienes {
-    top: 3.5rem;
-    left: 40%;
-    right: 40%;
-  }
-
-  /* ubicacion */
-
-  .textUbiPosition {
-    top: 3.5rem;
-    left: 43%;
-    right: 43%;
-  }
-
-  /* contacto */
-
-  .textContactPosition {
-    top: 3.5rem;
-    left: 42%;
-    right: 42%;
-
+    color: black;
+    font-weight: 900;
   }
 
   /*------------------------------------- INICIO shop_tablas.html (1440px) ---------------------------------------- */
@@ -830,6 +599,3 @@ a {
     background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
   }
 }
-
-/* ---------------------------------MEDIA QUERY 4k (2560px) --------------------------------------------------- */
-/* @media (min-width:2559px)  */
