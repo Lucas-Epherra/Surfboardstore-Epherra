@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  text-decoration: none !important;
   font-family: 'Oswald', sans-serif;
   box-sizing: border-box;
 }
@@ -12,80 +12,49 @@
 
 /* color de las letras de enlaces */
 a {
-  color: black;
+  color: black ;
 }
 
 /* --------------------------------------- index.html ( First Mobile (L)(425px) ------------------------------------ */
 
-/* comienzo de header (all) */
-.headerMods {
-  display: grid;
-  grid-template-columns: repeat(3, 33.33vw);
-  grid-template-rows: repeat(3, 4.16vh);
-  grid-template-areas:
-    ". headerLogo ."
-    ". . ."
-    ". menuNavbar .";
-  z-index: 8;
+
+/* barra de navegacion  */
+
+.bg-primary {
   background-image: linear-gradient(to right, #000000, #303030, #4e4e4e);
-  height: 12.5vh;
-  width: 100%;
-  position: sticky;
-  border-bottom: black solid 1px;
 
 }
 
-/* logo header */
-.headerLogo {
-  grid-area: headerLogo;
-  z-index: 9;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+/* botones del navbar (hovers) y personalizacion de botones*/
+.nav-link {
+  color: rgba(255, 253, 253, 0.746);
+  font-weight: 500;
+  font-size: large;
 }
 
-.logoImg {
-  height: 55px;
-  width: 200px;
+.nav-link:hover {
+  font-weight: 700;
+  background-color: #ffffff32;
+  color: rgb(0, 0, 0);
+
 }
 
-/* lista header */
-.menuNavbar {
-  display: flex;
-  grid-area: menuNavbar;
-  width: 100vw;
-  height: 12.5vh;
-  align-items: flex-end;
-  justify-content: center;
+.navbar-toggler {
+ border: black solid 1px;
 }
 
-.listNavbar {
-  display: flex;
-  border-radius: 15px;
-  background-color: #c4c8c5;
-  font-weight: 400;
-  border: solid 2px;
-  border-color: rgb(0, 0, 0);
-  padding: 5px;
-  z-index: 9;
-  max-height: 27px;
-  max-width: 100vw;
-  margin-bottom: 5px;
-  height: 27px;
-  align-items: center;
+/* boton inicio */
+
+.active {
+  color: rgba(255, 253, 253, 0.746) !important;
+  font-weight: 700;
+  font-size: large;
 }
 
-/* --------------animaciones o efecto en el header --------------- */
-.listNavbar:hover {
-  background-color: #34baab;
-  font-weight: bold;
-  border: black solid 3px;
-  transform: scale(1, 1.3);
-}
-
-
-.logoImg:hover {
-  transform: scale(1.2, 1.2);
+.active:hover {
+  color: rgb(0, 0, 0) !important;
+  font-weight: 700;
+  background-color: #ffffff32;
 }
 
 
@@ -98,6 +67,7 @@ a {
 .principalBox {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -105,18 +75,13 @@ a {
 .tituloIndexBox {
   display: flex;
   justify-content: center;
-  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
 }
 
 .title {
   margin-top: 2vh;
   text-align: center;
   color: #939493;
-  background-color: black;
-  border: #c4c8c5 2.5px solid;
-  border-radius: 5%;
   margin-bottom: 3vh;
-  padding: 10px;
   font-style: italic;
   width: fit-content;
 
@@ -134,6 +99,7 @@ a {
   text-align: center;
   width: fit-content;
   z-index: 9;
+  margin: 0px;
 }
 
 /* -------animacion/efecto sobre las cajas de texto main de index.html------ */
@@ -153,7 +119,7 @@ a {
 /* imagenes de intex.html */
 .imagenes {
   height: 30vh;
-  border: #939493 outset 5px;
+  border: #93949379 outset 2px;
   margin-bottom: 2vh;
   border-radius: 5%;
 
@@ -169,7 +135,7 @@ a {
 }
 
 .bannerSize {
-  width: 100vw;
+  width: 100%;
   border-bottom: black solid 2px;
   border-top: 1px black solid;
 }
@@ -185,8 +151,8 @@ a {
 .textShopPosition {
   position: absolute;
   top: 4.5rem;
-  left: 31%;
-  right: 31%;
+  left: 35%;
+  right: 35%;
 }
 
 /* imagen quienes_somos + texto y url acceso */
@@ -200,8 +166,8 @@ a {
 .textPositionQuienes {
   position: absolute;
   top: 4.5rem;
-  left: 25%;
-  right: 25%;
+  left: 32%;
+  right: 32%;
 }
 
 /* imagen de ubicacion + texto y link a como llegar */
@@ -215,8 +181,8 @@ a {
 .textUbiPosition {
   position: absolute;
   top: 4.5rem;
-  left: 32%;
-  right: 32%;
+  left: 36.5%;
+  right: 36.5%;
 }
 
 /* imagen de contacto + texto y link url */
@@ -230,81 +196,51 @@ a {
 .textContactPosition {
   position: absolute;
   top: 4.5rem;
-  left: 30%;
-  right: 30%;
+  left: 35%;
+  right: 35%;
 
 }
 
-/* footer (all) */
+/*--------------------------------------------- footer all htmls ----------------------------------------------------*/
 
-.footerDesign {
-  display: grid;
-  grid-template-columns: repeat(3, 33.33vw);
-  grid-template-rows: repeat(3, 4.16vh);
-  grid-template-areas:
-    ". footerLogo ."
-    ". . ."
-    ". listFooter .";
+.footer {
+  /*  display: flex; */
   background-image: linear-gradient(to right, #000000, #303030, #4e4e4e);
-  max-width: 100vw;
-  max-height: 12.5vh;
-  z-index: 9;
-  grid-area: footerDesign;
-  border-top: black solid 1px;
-  border-bottom: #000000 solid 3px;
+  padding-bottom: 1rem;
+}
+
+.menuFooter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 6rem;
+  width: 100%;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .footerLogo {
   display: flex;
-  max-width: 100vw;
-  max-height: 12.5vh;
-  grid-area: footerLogo;
-  justify-content: center;
-  align-content: flex-start;
-
-
-}
-
-.logoFooterImg {
-  height: 45px;
-}
-
-.menuFooter {
-  max-height: 12.5vh;
-  width: 100%;
-  display: flex;
-  max-width: 100vw;
-  grid-area: listFooter;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.listFooter {
-  font-weight: 400;
-  border-radius: 15px;
-  background-color: #c4c8c5;
-  border: black solid 2px;
-  display: flex;
-  max-height: 30px;
-  font-size: smaller;
-  margin-bottom: 6px;
-  padding: 5px;
   align-items: center;
-
+  justify-content: center;
+  width: 100%;
 }
 
-/* --------------animaciones o efecto en el footer --------------- */
-
-.listFooter:hover {
-  background-color: #34baab;
-  font-weight: bold;
-  border: black solid 3px;
-  transform: scale(1, 1.3);
-
+.logos {
+  border-radius: 100%;
 }
 
-.logoFooterImg:hover {
+.social {
+  margin: 0px 10px 10px 10px;
+}
+
+.social:hover {
   transform: scale(1.2, 1.2);
+}
+
+.logos:hover {
+  transform: scale(1.1, 1.1);
 }
 
 /* ---------------------------- PAGINA SHOP_TABLAS FIRST MOBILE (L)(425px) ------------------------------------------ */
@@ -611,20 +547,23 @@ a {
   }
 
   .containerMain {
-    grid-area: containerMain;
     display: grid;
-    grid-template-columns: repeat(4, 25vw);
-    grid-template-rows: repeat(4, 15.62vh);
+    grid-template-columns: repeat(2, 40vw);
+    grid-template-rows: 6.48vh 14vh 14vh 14vh 14vh;
     grid-template-areas:
-
-      "boxShop boxShop quienesBox quienesBox"
-      "boxShop boxShop quienesBox quienesBox"
-      "ubicacionBox ubicacionBox contactBox contactBox"
-      "ubicacionBox ubicacionBox contactBox contactBox";
+      "tituloIndexBox tituloIndexBox"
+      "boxShop quienesBox "
+      "boxShop quienesBox "
+      "ubicacionBox contactBox"
+      "ubicacionBox contactBox";
   }
 
-  .bannerMain {
-    grid-area: bannerMain;
+  
+  .fondoMain {
+    background-image: url('../imagenes/https___www.lifeofpix.com_wp-content_uploads_2017_11_edited-32-of-66.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .bannerSize {
@@ -638,11 +577,12 @@ a {
   }
 
   .tituloIndexBox {
-    grid-area: tituloIndexBox;
+    grid-area:tituloIndexBox;
+    display: flex;
+    width: 100%;
+    text-align: center;
     align-items: center;
-    font-size: small;
-    margin-bottom: 0px;
-    padding: 15px;
+    font-size: medium;
   }
 
 
@@ -760,32 +700,22 @@ a {
 @media (min-width:1439px) {
 
   /* ----------------------------------inicio de index.html (1440px)----------------------------------------------- */
+  
   .principalBox {
-    display: none;
+    display:none;
   }
 
   .fondoMain {
-
     background-image: url('../imagenes/https___www.lifeofpix.com_wp-content_uploads_2017_11_edited-32-of-66.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
   }
-
+ 
   .containerMain {
-    grid-area: containerMain;
     display: grid;
-    grid-template-columns: repeat(2, 50vw);
-    grid-template-rows: 6.48vh 14vh 14vh 14vh 14vh;
-    grid-template-areas:
-      "tituloIndexBox tituloIndexBox"
-      "boxShop quienesBox "
-      "boxShop quienesBox "
-      "ubicacionBox contactBox"
-      "ubicacionBox contactBox";
   }
-
+ 
   .imagenes {
     width: 25vw;
   }
@@ -809,6 +739,18 @@ a {
     font-size: medium;
   }
 
+  .title {
+    background: none;
+    border:none;
+    color: #303030;
+    font-weight: 700;
+  }
+
+  .textBox {
+   margin: 0px;
+
+  }
+
   /* shop */
 
   .textShopPosition {
@@ -816,6 +758,7 @@ a {
     left: 43%;
     right: 43%;
   }
+
 
   /* quienesSomos */
 
