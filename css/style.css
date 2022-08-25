@@ -140,7 +140,6 @@ a {
 }
 
 /*--------------------------------------------- footer all htmls ----------------------------------------------------*/
-
 .footer {
   /*  display: flex; */
   background-image: linear-gradient(to right, #000000, #303030, #4e4e4e);
@@ -182,77 +181,67 @@ a {
 }
 
 /* ---------------------------- PAGINA SHOP_TABLAS FIRST MOBILE (L)(425px) ------------------------------------------ */
-
-
-.containerMainShop {
-  display: none;
-}
-
 .principalBox {
   display: flex;
+  flex-direction: column;
+
 }
 
 .tituloShopBox {
   display: flex;
   justify-content: center;
-  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
-  background-size: cover;
 }
 
 .tituloSurfboards {
-  background-color: #c4c8c5;
-  border: black solid 5px;
-  border-radius: 15px;
-  margin-top: 15px;
-  height: 50px;
-  margin-bottom: 15px;
+  color: #ffffffcb;
+  border: #939493 0.5px solid;
+  background-color: #c4c8c549;
+  border-radius: 5%;
+  margin: 30px 0px 15px 0px;
   display: flex;
   align-items: center;
   padding: 10px;
-  font-size: larger;
 }
 
 /* contenedores de (shop_tablas)  */
-
 .textBoxes {
-  background-color: #c4c8c5;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  border-radius: 15px;
-  height: 50px;
-  padding: 5px;
-  border: solid black;
-  margin-left: 25%;
-  margin-top: 5px;
-
 }
 
 .colorBoxes {
   background-color: dimgrey;
   border: solid black;
   border-radius: 2%;
-
 }
 
-.tablasBox {
+.tituloModelos {
+  margin: 15px 0px 0px 0px;
+  padding: 5px;
+  background-color: #c4c8c5;
+  border-radius: 15px;
+  border: solid black;
+}
+
+.tablasBox:not(.textBoxes) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   height: 500px;
-  width: 400px;
+  margin: 15px 0px 15px 0px;
 }
 
 .tablaImg {
-  margin-left: 10%;
-  height: 80%;
+  height: 75%;
 }
 
 .tablaImg:hover {
-
   transform: scale(1.2, 1.1)
 }
 
 /* ---------------------------------- PAGINA QUIENES_SOMOS FIRST MOBILE(425PX) ------------------------------------- */
-
 .tituloQuienesBox {
   display: flex;
   justify-content: center;
@@ -264,9 +253,9 @@ a {
   color: black;
 }
 
-.quienesCuerpo{
+.quienesCuerpo {
   background-color: #e4e0e0de;
-  padding: 2rem; 
+  padding: 2rem;
   margin: 1rem;
 }
 
@@ -281,7 +270,7 @@ a {
 .tituloFotos {
   display: flex;
   justify-content: center;
-  color:black;
+  color: black;
   margin: 0px;
 }
 
@@ -294,10 +283,10 @@ a {
   border: black solid 4px;
   margin-top: 15px;
   margin-bottom: 15px;
-} 
+}
 
 .parrafos {
-  font-weight:500;
+  font-weight: 500;
   font-size: larger;
   color: black;
   padding: 0.5rem;
@@ -305,7 +294,6 @@ a {
 }
 
 /* ---------------------------------- PAGINA UBICACION.HTML FIRST MOBILE (425PX) ------------------------------------ */
-
 .tituloUbiBox {
   display: flex;
   justify-content: center;
@@ -334,48 +322,42 @@ a {
 }
 
 /* ---------------------------------- PAGINA CONTACTO.html FIRST MOBILE (425px) ------------------------------------- */
-
-
 .tituloContactBox {
   display: flex;
   justify-content: center;
 }
 
 .contactoTitulo {
-  background-color: #c4c8c5;
   margin-bottom: 15px;
   margin-top: 15px;
   padding: 10px;
-  border: black solid 5px;
-  border-radius: 30px;
-  font-size: larger;
+  color: #c4c8c5;
+  border: #c4c8c5 0.5px solid;
+  background-color: #ffffff2d;
+  border-radius: 5%;
 }
-
 
 .formBox {
   display: flex;
   justify-content: center;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 95vh;
   border-radius: 15px;
 }
 
 .formulario {
   align-self: center;
-  background-color: #4e4e4e;
-  border: black double 7px;
+  background-color: #d3d3d396;
+  border: rgba(255, 255, 255, 0.438) solid 3px;
   padding: 15px;
   border-radius: 10px;
-
+  margin-bottom: 2rem;
+  width: fit-content;
 }
 
 .boton {
   background-color: #c4c8c5;
   font-weight: 600;
-  padding: 2px;
+  padding: 4px;
   border-radius: 10px;
-
 }
 
 .inputs {
@@ -383,21 +365,16 @@ a {
   font-weight: 600;
   padding: 2px;
   border-radius: 10px;
-
 }
-
-
-
 
 /* ------- animaciones/efectos de contactanos.html ----------- */
 
 .boton:hover {
-  background-color: #34baab;
+  background-color: #ffffff21;
   padding: 2px;
-  border-radius: 15px;
+  border-radius: 10px;
   font-weight: 600;
   border: 1px back solid;
-
 }
 
 .inputs:hover {
@@ -405,22 +382,13 @@ a {
   transition: 1ms;
 }
 
-/* ------------------- Media query celulares M (375px)  (afecta solo a las imagenes de las tablas) -------------------------- */
-@media (max-width:375px) {
-  /* -------------------------------------------------seccion shop_Tablas--------------------------------- */
-
-  .tablaImg {
-    margin-left: 8%;
-  }
+.label {
+  color: black;
 }
 
-/* ------------------- Media query celulares S (320px) (afecta solo a las imagenes de las tablas) -------------------------- */
-@media (max-width:320px) {
-  /* -------------------------------------------------seccion shop_Tablas--------------------------------- */
-
-  .tablaImg {
-    margin-left: 3%;
-  }
+.inputs::placeholder {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
 }
 
 /*------------------------------------ media query para tablets (768px) ---------------------------------------------*/
@@ -455,54 +423,25 @@ a {
   }
 
   /* ------------------------------------- inicio shop_Tablas.html (768px)------------------------------------------- */
-  .containerMainShop {
-    display: grid;
-    grid-area: containerMainShop;
-    grid-template-columns: repeat(4, 25vw);
-    grid-template-rows: repeat(4, 15.62vh);
-    grid-template-areas:
-
-      "carrasco round  funboard longboard"
-      ". . . ."
-      ". . . ."
-      ". . . .";
+  .principalBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-
-  .carrasco {
-    grid-area: carrasco;
-  }
-
-  .round {
-    grid-area: round;
-  }
-
-  .funboard {
-    grid-area: funboard;
-  }
-
-  .longboard {
-    grid-area: longboard;
-  }
-
-  /* contenedores de (shop_tablas)  */
 
   .tablasBox {
-    height: 56vh;
-    width: 25vw;
-  }
-
-  .tablaImg {
-    margin-left: 1rem;
-    height: 60%;
+    max-width:349.2px ;
   }
 }
 
-/*-------------------------------------------- inicio quienes-somos (768px)------------------------------------------- */
-.fondoQuienes {
+/*------------------------------------------- inicio quienes-somos / contacto (768px) ----------------------------------------- */
+.fondoAlternativo {
   background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 /*-------------------------------- media query para laptop L (1440px) ------------------------------------------------ */
 @media (min-width:1439px) {
 
@@ -514,55 +453,19 @@ a {
   }
 
   .cardBox {
-    margin:4rem;
+    margin: 4rem;
   }
 
   .title {
     color: black;
     font-weight: 900;
   }
+
   /*------------------------------------- INICIO shop_tablas.html (1440px) ---------------------------------------- */
-
-  .containerMainShop {
-    display: grid;
-    grid-area: containerMainShop;
-    grid-template-columns: repeat(4, 25vw);
-    grid-template-rows: repeat(4, 15.62vh);
-    grid-template-areas:
-
-      "carrasco round funboard longboard"
-      ". . . ."
-      ". . . ."
-      ". . . .";
-
-    background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+  .principalBox {
+    display: flex;
+    padding: 40px 180px 40px 180px;
+    justify-content: space-between;
   }
 
-  .tablasBox {
-    height: 56vh;
-    width: 25vw;
-  }
-
-  .tablaImg {
-    margin-left: 4.2rem;
-    height: 60%;
-  }
-
-  /* ---------------------------------- INICIO quienes_somos.html (1440px)---------------------------------- */
-/* 
-  .fondoDesktop {
-    background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
-  } */
-
-  /*------------------------------------- INICIO ubicacion.html (1440px) ---------------------------------------- */
-
-  .fondoUbi {
-    background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
-  }
-
-  /*------------------------------------- INICIO Contacto.html (1440px) ---------------------------------------- */
-
-  .fondoContacto {
-    background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
-  }
 }
