@@ -253,38 +253,36 @@ a {
 
 /* ---------------------------------- PAGINA QUIENES_SOMOS FIRST MOBILE(425PX) ------------------------------------- */
 
-.textQuienesSomosBox {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 .tituloQuienesBox {
   display: flex;
   justify-content: center;
 }
 
 .tituloQuienes {
-  background-color: #c4c8c5;
-  border: black solid 5px;
   margin-top: 15px;
   padding: 7px;
-  border-radius: 10%;
-  font-size: larger;
-  border-radius: 25px;
+  color: black;
+}
+
+.quienesCuerpo{
+  background-color: #e4e0e0de;
+  padding: 2rem; 
+  margin: 2rem;
 }
 
 .parrafoUnoBox {
   display: flex;
-  width: 100vw;
+  width: 100%;
   align-items: center;
   text-align: center;
-  margin-top: 15px;
-  padding: 15px;
+  padding: 10px;
 }
 
-.parrafoUno {
-  background-color: #c4c8c5;
+.tituloFotos {
+  display: flex;
+  justify-content: center;
+  color:black;
+  margin: 0px;
 }
 
 .imagenesBox {
@@ -292,50 +290,16 @@ a {
   justify-content: center;
 }
 
-.imagenUno {
-  height: 60vh;
-  border: black solid 9px;
+.imagenQuienes {
+  border: black solid 4px;
   margin-top: 15px;
   margin-bottom: 15px;
-}
+} 
 
-.parrafoDosBox {
-  width: 100vw;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  padding: 15px;
-}
-
-.parrafoDos {
-  background-color: #c4c8c5;
-}
-
-.imagenDos {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  height: 60vh;
-  display: flex;
-  border: black solid 9px;
-}
-
-.parrafoTresBox {
-  display: flex;
-  width: 100vw;
-  text-align: center;
-  align-items: center;
-  padding: 15px;
-}
-
-.parrafoTres {
-  background-color: #c4c8c5;
-}
-
-/*-------------- efectos quienes_somos.html---------------- */
-.parrafos:hover {
-  background-color: #34baab;
-  font-weight: 700;
-  font-size: large;
+.parrafos {
+  font-weight:500;
+  font-size: larger;
+  color: black;
 }
 
 /* ---------------------------------- PAGINA UBICACION.HTML FIRST MOBILE (425PX) ------------------------------------ */
@@ -534,14 +498,20 @@ a {
   }
 }
 
+/*-------------------------------------------- inicio quienes-somos (768px)------------------------------------------- */
+.fondoQuienes {
+  background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /*-------------------------------- media query para laptop L (1440px) ------------------------------------------------ */
 @media (min-width:1439px) {
 
   /* ----------------------------------inicio de index.html (1440px)----------------------------------------------- */
-
   .principalBox {
     display: flex;
-    padding: 3rem 8rem 8rem 8rem;
+    padding: 2rem 8rem 3rem 8rem;
     justify-content: space-between;
   }
 
@@ -553,7 +523,6 @@ a {
     color: black;
     font-weight: 900;
   }
-
   /*------------------------------------- INICIO shop_tablas.html (1440px) ---------------------------------------- */
 
   .containerMainShop {
@@ -582,10 +551,10 @@ a {
   }
 
   /* ---------------------------------- INICIO quienes_somos.html (1440px)---------------------------------- */
-
+/* 
   .fondoDesktop {
     background-image: url('../imagenes/charcol\ black\ wallpaper\ background\ -\ Hecho\ con\ PosterMyWall.jpg');
-  }
+  } */
 
   /*------------------------------------- INICIO ubicacion.html (1440px) ---------------------------------------- */
 

@@ -5,90 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shorcut icon" href="../imagenes/favicon.png">
     <title>SURFBOARDSTORE</title>
 </head>
 
 <body>
-    <!-- inicio de header -->
-    <header class="headerMods">
-        <div class="headerLogo">
-            <a href="../index.html">
-                <img class="logoImg" src="../imagenes/uva-logo-2018b.png" alt="Logo SURFBOARDSTORE">
-            </a>
+    <div class="fondoMain fondoQuienes">
+        <!-- inicio de header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"><img class="logos" src="../imagenes/logoUva.png"
+                            alt="vientoNorte"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="../secciones/shop_tablas.html">Surfboards</a>
+                            <a class="nav-link" href="../secciones/ubicacion.html">Como Llegar</a>
+                            <a class="nav-link" href="../secciones/quienes_somos.html">Quienes Somos</a>
+                            <a class="nav-link" href="../secciones/contactanos.html">Contactanos</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- inicio del main -->
+
+
+        <div class="container-md ">
+
+            <div class="quienesCuerpo">
+                <span class="tituloQuienesBox">
+                    <h1 class="tituloQuienes"> ¿ Quienes Somos ? </h1>
+                </span>
+
+                <div class="parrafoUnoBox">
+                    <p class="parrafos">Matías “UVA” Crego es el hombre detrás de la magia, con largos años de trabajo
+                        manual y de investigación en Argentina, Hawaii y California, hoy se ubica en la vanguardia del
+                        diseño de surfboards. desde Mar del Plata, la auténtica Surf City argentina, UVA Surfboards se
+                        propone dar un servicio de primera línea para sus clientes y atender a los surfers más exigentes
+                        de
+                        la región.</p>
+                </div>
+
+                <div class="imagenesBox"> <img class="imagenQuienes img-fluid" src="../imagenes/MAE.jpg" alt="MAE">
+                </div>
+
+                <span>
+                    <h2 class="tituloFotos">Personalizacion</h2>
+                </span>
+
+                <div class="parrafoUnoBox">
+                    <p class="parrafos">Me caracterizo por asesorarme bien de lo que precisa y busca el surfista, sus
+                        medidas físicas, peso, altura, nivel y años de surf así puedo volcar mi experiencia en el
+                        momento de
+                        diseñarle la tabla. También es muy importante los materiales para que la tabla flote, funcione y
+                        sea
+                        más dura a los golpes y maltrato.</p>
+                </div>
+
+                <div class="imagenesBox"> <img class="imagenQuienes img-fluid" src="../imagenes/Shaper.jpg" alt="Shape">
+                </div>
+
+                <span>
+                    <h2 class="tituloFotos">Experiencia</h2>
+                </span>
+
+                <div class="parrafoUnoBox">
+                    <p class="parrafos">Contamos con mas de 20 años de trayectoria , realizando tablas para todos los tipos de surfistas , desde profesionales a principiantes, contamos con una amplia gama de modelos y un gran stock permanente, a si mismo realizamos modelos personalizados para el nivel y estado del surfista.</p>
+                </div>
+            </div>
         </div>
-        <!-- Barra de navegacion -->
-        <nav>
-            <ul class="menuNavbar">
-                <li class="listNavbar"><a href="../index.html">Inicio</a></li>
-                <li class="listNavbar"><a href="../secciones/shop_tablas.html">Surfboards</a></li>
-                <li class="listNavbar"><a href="../secciones/quienes_somos.html">Quienes Somos</a></li>
-                <li class="listNavbar"><a href="../secciones/ubicacion.html">Ubicacion</a></li>
-                <li class="listNavbar"><a href="../secciones/contactanos.html">Contactanos</a></li>
+
+        <!---------------------------------------------------- comienzo del footer ---------------------------------------------->
+        <footer class="footer">
+            <ul class="menuFooter">
+
+                <li class="listFooter">
+                    <a href="https://www.instagram.com/uvasurfboards/?hl=es" target="_blank">
+                        <img src="../imagenes/instalogo1.png" class="social" alt="Instagram">
+                    </a>
+                </li>
+
+                <li class="listFooter">
+                    <a href="https://www.facebook.com/lucas.epherra" target="_blank">
+                        <img src="../imagenes/logofaceEdit.png" class="social" alt="facebook">
+                    </a>
+                </li>
+
+                <li class="listFooter">
+                    <a href="https://wa.me/542983664056" target="_blank">
+                        <img src="../imagenes/wspLogo2.png" class="social" alt="Whatsapp">
+                    </a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    <!-- inicio del main -->
-    <div class="fondoMain fondoDesktop">
 
-        <div class="tituloQuienesBox">
-            <h1 class="tituloQuienes"> ¿ Quienes Somos ? </h1>
-        </div>
+            <!------------------------ boton volver arriba (vuelve a index donde no hay altura para ir arriba) ( con el logo ) ---------------------------------->
+            <div class="footerLogo">
+                <a class="footerLogoUrl" href="../secciones/quienes_somos.html">
+                    <img class="logos" src="../imagenes/logoUva.png" alt="LogoFooter">
+                </a>
+            </div>
 
-        <div class="parrafoUnoBox">
-            <p class="parrafoUno parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consectetur amet labore
-                voluptate?
-                Praesentium, debitis quo quasi, at pariatur quos, deserunt repudiandae explicabo modi expedita quae ea
-                id
-                quam voluptatibus?
-                Obcaecati magnam quisquam id est officia in iure, nemo libero modi. Ipsa laboriosam unde magni saepe
-                nisi,
-                accusamus dicta voluptate et nemo nulla voluptates iure, numquam quae, ducimus quaerat voluptas?</p>
-        </div>
-
-        <div class="imagenesBox"> <img class="imagenUno" src="../imagenes/MAE.jpg" alt="MAE"> </div>
-
-        <div class="parrafoDosBox">
-            <p class="parrafoDos parrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda illum
-                ullam harum corrupti
-                libero, sunt, tenetur aspernatur quam, quis perspiciatis ad neque fugiat praesentium dolores ducimus
-                rerum
-                dolorem. Aliquam.
-                Odio quidem quasi consequuntur nam repudiandae placeat maxime hic neque libero atque, facilis maiores
-                voluptatum. Ullam ex deserunt minus voluptatibus hic veniam voluptatum inventore dolorum repellat
-                aspernatur. Provident, quas non!</p>
-        </div>
-
-        <div class="imagenesBox"> <img class="imagenDos" src="../imagenes/Shaper.jpg" alt="Shape"> </div>
-
-        <div class="parrafoTresBox">
-            <p class="parrafoTres parrafos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda illum
-                ullam harum corrupti
-                libero, sunt, tenetur aspernatur quam, quis perspiciatis ad neque fugiat praesentium dolores ducimus
-                rerum
-                dolorem. Aliquam.
-                Odio quidem quasi consequuntur nam repudiandae placeat maxime hic neque libero atque, facilis maiores
-                voluptatum. Ullam ex deserunt minus voluptatibus hic veniam voluptatum inventore dolorum repellat
-                aspernatur. Provident, quas non!</p>
-        </div>
+        </footer>
 
     </div>
-    <!-- inicio de footer -->
-    <footer class="footerDesign">
-        <ul class="menuFooter">
-            <li class="listFooter"><a href="https://www.instagram.com/uvasurfboards/" target="_blank">Instagram</a>
-            </li>
-            <li class="listFooter"><a href="../secciones/contactanos.html">Contactanos</a></li>
-            <li class="listFooter"><a href="../secciones/ubicacion.html">Ubicacion</a></li>
-        </ul>
-        <!-- boton volver arriba ( con el logo ) -->
-        <div class="footerLogo">
-            <a class="footerLogoUrl" href="../index.html">
-                <img class="logoFooterImg" src="../imagenes/uva-logo-2018b.png" alt="Logo SURFBOARDSTORE2">
-            </a>
-        </div>
-    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
