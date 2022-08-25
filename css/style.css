@@ -267,7 +267,7 @@ a {
 .quienesCuerpo{
   background-color: #e4e0e0de;
   padding: 2rem; 
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .parrafoUnoBox {
@@ -300,6 +300,8 @@ a {
   font-weight:500;
   font-size: larger;
   color: black;
+  padding: 0.5rem;
+  border: #00000092 0.2px solid;
 }
 
 /* ---------------------------------- PAGINA UBICACION.HTML FIRST MOBILE (425PX) ------------------------------------ */
@@ -310,25 +312,25 @@ a {
 }
 
 .tituloUbicacion {
-  background-color: #c4c8c5;
   padding: 10px;
-  border-radius: 40px;
-  border: black solid 5px;
-  margin: 10px;
-  font-size: larger;
+  margin: 40px 10px 10px 10px;
+  color: #c4c8c5;
+  background-color: #ffffff1e;
+  border: solid 0.5px #c4c8c5;
+  border-radius: 7px;
 }
 
 .mapaBox {
   display: flex;
   justify-content: center;
-  height: 90vh;
-  margin: 15px 15px 0px 15px;
+  height: 80vh;
+  margin: 0px 15px 0px 15px;
 }
 
 .mapaIframe {
   display: flex;
   justify-content: center;
-
+  margin: 2rem;
 }
 
 /* ---------------------------------- PAGINA CONTACTO.html FIRST MOBILE (425px) ------------------------------------- */
@@ -426,7 +428,6 @@ a {
 @media (min-width:767px) {
 
   /*  ------------------------------------------- inicia index html (768px) ----------------------------------------- */
-
   .principalBox {
     display: flex;
     flex-direction: row;
@@ -447,13 +448,11 @@ a {
     align-items: center;
     font-size: medium;
     background-image: linear-gradient(90deg, rgba(250, 204, 116, 1) 0%, rgba(254, 204, 109, 1) 23%, rgba(255, 209, 108, 1) 52%, rgba(255, 211, 94, 1) 72%, rgba(255, 217, 70, 1) 100%);
-
   }
 
   .title {
     color: black;
   }
-
 
   /* ------------------------------------- inicio shop_Tablas.html (768px)------------------------------------------- */
   .containerMainShop {
@@ -504,7 +503,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 /*-------------------------------- media query para laptop L (1440px) ------------------------------------------------ */
 @media (min-width:1439px) {
 
