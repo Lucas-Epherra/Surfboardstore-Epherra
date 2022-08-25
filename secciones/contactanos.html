@@ -41,14 +41,14 @@
     <!-- inicio del main -->
     <div class="fondoMain fondoAlternativo">
 
-        <span class="tituloContactBox">
-            <h1 class="contactoTitulo">Contacto</h1>
-        </span>
+        <div class="container-fluid">
 
-        <div class="container">
-            
+            <span class="tituloContactBox">
+                <h1 class="contactoTitulo">Contacto</h1>
+            </span>
+
             <div class="formBox">
-                <form class="formulario container" action="#">
+                <form class="formulario form-body" action="#">
 
                     <label class="label" for="Nombre y Apellido">Nombre:</label>
                     <input class="inputs" type="text" placeholder="Nombre y Apellido" name="Nombre">
@@ -72,7 +72,7 @@
                     <label class="label" for="Mensaje">Mensaje:</label>
                     <br>
 
-                    <textarea class="inputs" name="Mensaje" placeholder="Escribe tu mensaje" cols="50"
+                    <textarea class="inputs form-control" name="Mensaje" placeholder="Escribe tu mensaje" cols="50"
                         rows="10"></textarea>
                     <br><br>
                     <input class="boton" type="submit" value="Enviar">
