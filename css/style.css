@@ -32,6 +32,13 @@ a {
   font-size: large;
 }
 
+.navbar-nav {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+
 .nav-link:hover {
   font-weight: 700;
   background-color: #ffffff8b;
@@ -81,7 +88,7 @@ a {
   border-top: 1px black solid;
 }
 
-/* -----------------------titulo principal */
+/* -----------------------titulo principal ----------------------------------- */
 
 .tituloIndexBox {
   display: flex;
@@ -104,8 +111,8 @@ a {
 /* imagenes de index.html */
 .imagenes {
   height: 30vh;
-  border: #93949379 outset 2px;
-  border-radius: 5%;
+  border: #93949334 0.5px;
+  border-radius: 10px;
 }
 
 /* botones del intex */
@@ -127,7 +134,7 @@ a {
   margin: 15px 15px 15px 15px;
   padding: 10px;
   background-color: #74747463;
-  border-radius: 5%;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -192,7 +199,7 @@ a {
   color: #ffffffcb;
   border: #939493 0.5px solid;
   background-color: #c4c8c549;
-  border-radius: 5%;
+  border-radius: 10px;
   margin: 30px 0px 15px 0px;
   display: flex;
   align-items: center;
@@ -210,7 +217,7 @@ a {
 .colorBoxes {
   background-color: dimgrey;
   border: solid black;
-  border-radius: 2%;
+  border-radius: 15px;
 }
 
 .tituloModelos {
@@ -253,6 +260,7 @@ a {
   background-color: #e4e0e0de;
   padding: 2rem;
   margin: 1rem;
+  border-radius: 10px;
 }
 
 .parrafoUnoBox {
@@ -277,6 +285,7 @@ a {
 
 .imagenQuienes {
   border: black solid 4px;
+  border-radius: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -287,6 +296,7 @@ a {
   color: black;
   padding: 0.5rem;
   border: #00000092 0.2px solid;
+  border-radius: 10px;
 }
 
 /* ---------------------------------- PAGINA UBICACION.HTML FIRST MOBILE (425PX) ------------------------------------ */
