@@ -84,8 +84,6 @@ a {
 
 .bannerSize {
   width: 100%;
-  border-bottom: black solid 2px;
-  border-top: 1px black solid;
 }
 
 /* -----------------------titulo principal ----------------------------------- */
@@ -111,21 +109,22 @@ a {
 /* imagenes de index.html */
 .imagenes {
   height: 30vh;
-  border: #93949334 0.5px;
+  border: #0000003c 0.5px solid;
   border-radius: 10px;
 }
 
 /* botones del intex */
 .botonMain {
-  background-color: #c4c8c563;
-  border: #3a3c3b89 1px solid;
+  background-color: #f2f2f229;
+  border: #000000 0.5px solid;
+  color: #eff0ef9c;
 }
 
 .botonMain:hover {
-  background-color: #dededebc;
+  background-color: #ffffff51;
   border: rgb(0, 0, 0) 0.5px solid;
   font-weight: 700;
-  transform: scale(1.1, 1.1);
+  transform: scale(1.05,1.05);
 }
 
 /* card con imagen y boton url */
@@ -133,7 +132,8 @@ a {
 .cardBox {
   margin: 15px 15px 15px 15px;
   padding: 10px;
-  background-color: #74747463;
+  background-image: linear-gradient(to right, #000000, #303030, #4e4e4e);
+  border: #00000044 0.5px solid;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -449,9 +449,22 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
+/*-------------------------------- media query para laptop (910px) ------------------------------------------------ */
+@media (min-width:900px) {
 
+  /* index html  */
+  .principalBox {
+    display: flex;
+    padding: 2rem 6rem 2rem 6rem;
+    justify-content: space-between;
+  }
+
+  .cardBox {
+    margin: 2rem;
+  }
+}
 /*-------------------------------- media query para laptop L (1440px) ------------------------------------------------ */
-@media (min-width:1439px) {
+@media (min-width:1200px) {
 
   /* ----------------------------------inicio de index.html (1440px)----------------------------------------------- */
   .principalBox {
