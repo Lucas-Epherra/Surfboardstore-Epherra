@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none !important;
   font-family: 'Oswald', sans-serif;
   box-sizing: border-box;
 }
@@ -104,6 +103,7 @@ a {
   font-weight: 800;
   font-style: italic;
   width: fit-content;
+  text-decoration: underline;
 }
 
 /* imagenes de index.html */
@@ -111,20 +111,20 @@ a {
   height: 30vh;
   border: #0000003c 0.5px solid;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 /* botones del intex */
 .botonMain {
-  background-color: #f2f2f229;
-  border: #000000 0.5px solid;
-  color: #eff0ef9c;
+  background-color: #c4c8c563;
+  border: #3a3c3b89 1px solid;
 }
 
 .botonMain:hover {
   background-color: #ffffff51;
   border: rgb(0, 0, 0) 0.5px solid;
   font-weight: 700;
-  transform: scale(1.05,1.05);
+  transform: scale(1.05,1.1);
 }
 
 /* card con imagen y boton url */
@@ -183,7 +183,7 @@ a {
   transform: scale(1.1, 1.1);
 }
 
-/* ---------------------------- PAGINA SHOP_TABLAS FIRST MOBILE (L)(425px) ------------------------------------------ */
+/* ------------------------------------- PAGINA SHOP_TABLAS FIRST MOBILE (L)(425px) ------------------------------------------ */
 .principalBox {
   display: flex;
   flex-direction: column;
@@ -207,6 +207,7 @@ a {
 }
 
 /* contenedores de (shop_tablas)  */
+
 .textBoxes {
   width: 100%;
   display: flex;
@@ -214,18 +215,12 @@ a {
   align-items: center;
 }
 
-.colorBoxes {
-  background-color: dimgrey;
-  border: solid black;
-  border-radius: 15px;
-}
-
 .tituloModelos {
   margin: 15px 0px 0px 0px;
   padding: 5px;
-  background-color: #c4c8c5;
-  border-radius: 15px;
-  border: solid black;
+  font-size: x-large;
+  color: #000000;
+  text-decoration: underline;
 }
 
 .tablasBox:not(.textBoxes) {
@@ -234,6 +229,9 @@ a {
   justify-content: space-evenly;
   height: 500px;
   margin: 15px 0px 15px 0px;
+  background-color: rgba(255, 255, 255, 0.529);
+  border: solid black;
+  border-radius: 15px;
 }
 
 .tablaImg {
@@ -276,6 +274,7 @@ a {
   justify-content: center;
   color: black;
   margin: 0px;
+  text-decoration: underline;
 }
 
 .imagenesBox {
