@@ -20,11 +20,10 @@ nav {
     align-items: flex-end; }
   nav div div .active {
     color: rgba(255, 253, 253, 0.746) !important;
-    font-weight: 900;
-    font-size: large; }
+    font-weight: 750 !important; }
     nav div div .active:hover {
       color: black !important;
-      font-weight: 700;
+      font-weight: 600;
       background-color: #ffffff8b; }
   nav div div .nav-link {
     color: rgba(255, 253, 253, 0.746);

@@ -1,61 +1,56 @@
    /* ---------------------------------- barra de navegacion (all html) ----------------------------------------  */
    nav {
 
-    background: $backgroundGradient;
+       background: $backgroundGradient;
 
-    div {
+       div {
 
-        //hover sobre logos
-        .logos {
-            &:hover {
-                transform: scale(1.1, 1.1);
-            }
-        }
+           //hover sobre logos
+           .logos {
+               &:hover {
+                   transform: scale(1.1, 1.1);
+               }
+           }
 
-        /////////////// menu hamburguesa //////////// 
-
-
-        // boton que agranda el menu de navegacion
-        .navbar-toggler {
-            border: black solid 1px;
-        }
-
-        div {
-            .navbar-nav {
-                display: flex;
-                align-items: flex-end;
-            }
+           /////////////// menu hamburguesa //////////// 
 
 
-        }
+           // boton que agranda el menu de navegacion
+           .navbar-toggler {
+               border: black solid 1px;
+           }
 
-        // estilos para las listas del nav
-        div {
+           div {
+               .navbar-nav {
+                   display: flex;
+                   align-items: flex-end;
+               }
 
-            .active {
-                color: $letrasColor  !important;
-                font-weight: 900;
-                font-size: large;
+               // estilos para las listas del nav
 
-                &:hover {
-                    color: rgb(0, 0, 0) !important;
-                    font-weight: 700;
-                    background-color: #ffffff8b;
-                }
-            }
+               .active {
+                   color: $letrasColor  !important;
+                   font-weight: 750 !important;
 
-            .nav-link {
-                color: $letrasColor;
-                font-weight: 500;
-                font-size: large;
 
-                &:hover {
-                    font-weight: 700;
-                    background-color: #ffffff8b;
-                    color: rgb(0, 0, 0);
-                }
-            }
-        }
-    }
+                   &:hover {
+                       color: rgb(0, 0, 0) !important;
+                       font-weight: 600;
+                       background-color: #ffffff8b;
+                   }
+               }
 
-}
+               .nav-link {
+                   color: $letrasColor;
+                   font-weight: 500;
+                   font-size: large;
+
+                   &:hover {
+                       font-weight: 700;
+                       background-color: #ffffff8b;
+                       color: rgb(0, 0, 0);
+                   }
+               }
+           }
+       }
+   }
