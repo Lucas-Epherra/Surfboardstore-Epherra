@@ -1,0 +1,21 @@
+//reseteo css
+@import './base/reset';
+
+//variables
+@import './base/variables';
+
+//header (all htmls)
+@import './header/header';
+
+//contenido principal (index.html)
+@import './layouts/inicio';
+
+//footer (all htmls)
+@import './footer/footer';
+
+////////////////////////////////////////////////// MEDIAS QUERYS ////////////////////////////////////////////////////////////////
+
+//////////// 768px ////////////
+@import './medias-querys/medias-query-768px.scss';
+/////////// 1440px ////////////
+@import './medias-querys/medas-querys-1440px.scss';

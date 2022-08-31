@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif; }
+  * a {
+    color: black; }
+
+/* ---------------------------------- barra de navegacion (all html) ----------------------------------------  */
+nav {
+  background: linear-gradient(to right, #000000, #303030, #4e4e4e); }
+  nav div .logos:hover {
+    transform: scale(1.1, 1.1); }
+  nav div .navbar-toggler {
+    border: black solid 1px; }
+  nav div div .navbar-nav {
+    display: flex;
+    align-items: flex-end; }
+  nav div div .active {
+    color: rgba(255, 253, 253, 0.746) !important;
+    font-weight: 900;
+    font-size: large; }
+    nav div div .active:hover {
+      color: black !important;
+      font-weight: 700;
+      background-color: #ffffff8b; }
+  nav div div .nav-link {
+    color: rgba(255, 253, 253, 0.746);
+    font-weight: 500;
+    font-size: large; }
+    nav div div .nav-link:hover {
+      font-weight: 700;
+      background-color: #ffffff8b;
+      color: black; }
+
+div .bannerSize {
+  width: 100%; }
+
+.principalBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .principalBox .titulos-justify {
+    display: flex;
+    justify-content: center; }
+    .principalBox .titulos-justify .title {
+      margin-top: 5vh;
+      text-align: center;
+      color: #c4c8c5;
+      font-weight: 800;
+      font-style: italic;
+      width: fit-content; }
+  .principalBox .imagenes {
+    height: 30vh;
+    border: #93949334 0.5px;
+    border-radius: 10px;
+    margin-bottom: 10px; }
+  .principalBox .botonMain {
+    background-color: #c4c8c563;
+    border: #3a3c3b89 1px solid; }
+    .principalBox .botonMain:hover {
+      background-color: #ffffff51;
+      border: black 0.5px solid;
+      font-weight: 700;
+      transform: scale(1.05, 1.1); }
+  .principalBox .cardBox {
+    margin: 15px 15px 15px 15px;
+    padding: 10px;
+    background-image: linear-gradient(to right, #000000, #303030, #4e4e4e);
+    border: #00000044 0.5px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content; }
+  .principalBox .botonMain {
+    margin: 5px; }
+
+/* ---------------------------------- footer (all html) ----------------------------------------  */
+footer {
+  background: linear-gradient(to right, #000000, #303030, #4e4e4e);
+  padding-bottom: 1rem; }
+  footer .menuFooter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 6rem;
+    width: 100%;
+    list-style: none;
+    margin: 0px;
+    padding: 0px; }
+  footer li a .social {
+    margin: 0px 10px 10px 10px; }
+    footer li a .social:hover {
+      transform: scale(1.2, 1.2); }
+  footer .footerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+  footer a .logos:hover {
+    transform: scale(1.1, 1.1); }
+
+@media (min-width: 767px) {
+  .principalBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url("../imagenes/https___www.lifeofpix.com_wp-content_uploads_2017_11_edited-32-of-66.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    .principalBox .tituloIndexBox {
+      display: flex;
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      font-size: medium; }
+      .principalBox .tituloIndexBox .title {
+        color: black; } }
+
+/*-------------------------------- media query para laptop L (1440px) ------------------------------------------------ */
+@media (min-width: 1439px) {
+  /* ----------------------------------inicio de index.html (1440px)----------------------------------------------- */
+  .principalBox {
+    display: flex;
+    padding: 2rem 8rem 3rem 8rem;
+    justify-content: space-between; }
+    .principalBox .cardBox {
+      margin: 4rem; }
+    .principalBox .tituloIndexBox .title {
+      color: black;
+      font-weight: 900; } }

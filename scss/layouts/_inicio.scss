@@ -1,0 +1,81 @@
+///////////////////////////////////////////////////////////  Main index.html ////////////////////////////////////////////////////////
+
+////////////// banner main (index.html) ///////////////
+
+div {
+    .bannerSize {
+        width: 100%;
+    }
+}
+
+
+//////////////////////// CONTENEDOR MAIN ////////////////////////////////
+.principalBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /////////////////// titulo principal /////////////////////////////
+
+    .titulos-justify {
+        display: flex;
+        justify-content: center;
+
+
+        .title {
+            margin-top: 5vh;
+            text-align: center;
+            color: #c4c8c5;
+            font-weight: 800;
+            font-style: italic;
+            width: fit-content;
+        }
+
+    }
+
+    /////////////////// imagenes del main ///////////////////////////////
+    .imagenes {
+        height: 30vh;
+        border: #93949334 0.5px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    ///////////////////////////// botones del main  //////////////////
+
+    .botonMain {
+        background-color: #c4c8c563;
+        border: #3a3c3b89 1px solid;
+
+        &:hover {
+            background-color: #ffffff51;
+            border: rgb(0, 0, 0) 0.5px solid;
+            font-weight: 700;
+            transform: scale(1.05, 1.1);
+        }
+    }
+
+    /////////////////////////// card con imagen y boton url /////////////////
+
+    .cardBox {
+        margin: 15px 15px 15px 15px;
+        padding: 10px;
+        background-image: linear-gradient(to right, #000000, #303030, #4e4e4e);
+        border: #00000044 0.5px solid;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+    }
+
+    .botonMain {
+        margin: 5px;
+    }
+
+}

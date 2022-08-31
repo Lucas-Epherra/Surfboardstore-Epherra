@@ -1,0 +1,61 @@
+   /* ---------------------------------- barra de navegacion (all html) ----------------------------------------  */
+   nav {
+
+    background: $backgroundGradient;
+
+    div {
+
+        //hover sobre logos
+        .logos {
+            &:hover {
+                transform: scale(1.1, 1.1);
+            }
+        }
+
+        /////////////// menu hamburguesa //////////// 
+
+
+        // boton que agranda el menu de navegacion
+        .navbar-toggler {
+            border: black solid 1px;
+        }
+
+        div {
+            .navbar-nav {
+                display: flex;
+                align-items: flex-end;
+            }
+
+
+        }
+
+        // estilos para las listas del nav
+        div {
+
+            .active {
+                color: $letrasColor  !important;
+                font-weight: 900;
+                font-size: large;
+
+                &:hover {
+                    color: rgb(0, 0, 0) !important;
+                    font-weight: 700;
+                    background-color: #ffffff8b;
+                }
+            }
+
+            .nav-link {
+                color: $letrasColor;
+                font-weight: 500;
+                font-size: large;
+
+                &:hover {
+                    font-weight: 700;
+                    background-color: #ffffff8b;
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+    }
+
+}
