@@ -6,48 +6,74 @@
 
     main {
 
-
-        div,
         .principalBoxTablas {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
 
-            .principalBox {
-                display: none;
+            div {
 
+                .titulos-justify {
+                    display: flex;
+                    justify-content: center;
 
-                div,
-                .tablasBox {
-                    max-width: 349.2px;
+                    .tituloSurfboards {
+                        color: black;
+                        text-decoration: underline;
+                        border: none;
+                        background: none;
+                        border-radius: none;
+                        margin: 15px;
+                        display: flex;
+                        align-items: center;
+                        padding: 10px;
+                    }
                 }
+            }
+
+            .tablasBox:not(.textBoxes) {
+                height: 90vh;
+                width: 50vw;
             }
         }
     }
-
 }
+
+
 
 ////////////////////////////////////////// INICIO shop_tablas.html (1440px) //////////////////////////////////////////////////
 
-main {
+@media (min-width:1200px) {
 
-    .principalBox {
+    main {
 
-        .container-fluid {
+        div {
 
-            .titulos-justify {
-                display: flex;
-                justify-content: center;
+            div {
 
-                .tituloSurfboards {
-                    color: #000000;
+                .titulos-justify {
                     display: flex;
-                    align-items: center;
-                    padding: 10px;
+                    justify-content: center;
+
+                    .tituloSurfboards {
+                        color: black;
+                        text-decoration: underline;
+                        border: none;
+                        background: none;
+                        border-radius: none;
+                        margin: 15px;
+                        display: flex;
+                        align-items: center;
+                        padding: 10px;
+                    }
+
+                    .tablasBox:not(.textBoxes) {
+                        height: 95vh;
+                        width:fit-content;
+                    }
                 }
             }
         }
-
     }
 }

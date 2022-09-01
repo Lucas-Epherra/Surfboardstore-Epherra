@@ -1,10 +1,9 @@
 ////////////////////////////////////////////////// CONTENEDOR MAIN SHOP TABLAS ////////////////////////////////////////////////////
 
 main {
+    div {
 
-    .principalBox {
-
-        .container-fluid {
+        div {
 
             .titulos-justify {
                 display: flex;
@@ -29,11 +28,13 @@ main {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
-                height: 80vh;
+                width: 95vw;
+                height: 90vh;
                 margin: 15px 0px 15px 0px;
                 background-color: rgba(255, 255, 255, 0.529);
                 border: solid black;
                 border-radius: 15px;
+
 
                 .tablaImg {
                     height: 75%;
@@ -41,12 +42,6 @@ main {
                     &:hover {
                         transform: scale(1.2, 1.1)
                     }
-                }
-
-                div, .container-fluid {
-                p, .parrafo {
-                    width: 20vw;
-                } 
                 }
 
                 .textBoxes {
@@ -62,8 +57,17 @@ main {
                         color: #000000;
                         text-decoration: underline;
                     }
+
                 }
 
+                div {
+                   span {
+
+                        .text-alignment {
+                            text-align: center;
+                        }
+                    }
+                }
             }
         }
     }

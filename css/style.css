@@ -82,12 +82,12 @@ div .bannerSize {
   .principalBox .botonMain {
     margin: 5px; }
 
-main .principalBox .container-fluid {
+main div div {
   /* contenedores de (shop_tablas)  */ }
-  main .principalBox .container-fluid .titulos-justify {
+  main div div .titulos-justify {
     display: flex;
     justify-content: center; }
-    main .principalBox .container-fluid .titulos-justify .tituloSurfboards {
+    main div div .titulos-justify .tituloSurfboards {
       color: #ffffffcb;
       border: #939493 0.5px solid;
       background-color: #c4c8c549;
@@ -96,32 +96,33 @@ main .principalBox .container-fluid {
       display: flex;
       align-items: center;
       padding: 10px; }
-  main .principalBox .container-fluid .tablasBox:not(.textBoxes) {
+  main div div .tablasBox:not(.textBoxes) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 80vh;
+    width: 95vw;
+    height: 90vh;
     margin: 15px 0px 15px 0px;
     background-color: rgba(255, 255, 255, 0.529);
     border: solid black;
     border-radius: 15px; }
-    main .principalBox .container-fluid .tablasBox:not(.textBoxes) .tablaImg {
+    main div div .tablasBox:not(.textBoxes) .tablaImg {
       height: 75%; }
-      main .principalBox .container-fluid .tablasBox:not(.textBoxes) .tablaImg:hover {
+      main div div .tablasBox:not(.textBoxes) .tablaImg:hover {
         transform: scale(1.2, 1.1); }
-    main .principalBox .container-fluid .tablasBox:not(.textBoxes) div p, main .principalBox .container-fluid .tablasBox:not(.textBoxes) div .parrafo, main .principalBox .container-fluid .tablasBox:not(.textBoxes) .container-fluid p, main .principalBox .container-fluid .tablasBox:not(.textBoxes) .container-fluid .parrafo {
-      width: 20vw; }
-    main .principalBox .container-fluid .tablasBox:not(.textBoxes) .textBoxes {
+    main div div .tablasBox:not(.textBoxes) .textBoxes {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center; }
-      main .principalBox .container-fluid .tablasBox:not(.textBoxes) .textBoxes .tituloModelos {
+      main div div .tablasBox:not(.textBoxes) .textBoxes .tituloModelos {
         margin: 15px 0px 0px 0px;
         padding: 5px;
         font-size: x-large;
         color: #000000;
         text-decoration: underline; }
+    main div div .tablasBox:not(.textBoxes) div span .text-alignment {
+      text-align: center; }
 
 /* ---------------------------------- footer (all html) ----------------------------------------  */
 footer {
@@ -186,26 +187,42 @@ footer {
       font-weight: 900; } }
 
 @media (min-width: 767px) {
-  main div,
   main .principalBoxTablas {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around; }
-    main div .principalBox,
-    main .principalBoxTablas .principalBox {
-      display: none; }
-      main div .principalBox div,
-      main div .principalBox .tablasBox,
-      main .principalBoxTablas .principalBox div,
-      main .principalBoxTablas .principalBox .tablasBox {
-        max-width: 349.2px; } }
+    main .principalBoxTablas div .titulos-justify {
+      display: flex;
+      justify-content: center; }
+      main .principalBoxTablas div .titulos-justify .tituloSurfboards {
+        color: black;
+        text-decoration: underline;
+        border: none;
+        background: none;
+        border-radius: none;
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        padding: 10px; }
+    main .principalBoxTablas .tablasBox:not(.textBoxes) {
+      height: 90vh;
+      width: 50vw; } }
 
-main .principalBox .container-fluid .titulos-justify {
-  display: flex;
-  justify-content: center; }
-  main .principalBox .container-fluid .titulos-justify .tituloSurfboards {
-    color: #000000;
+@media (min-width: 1200px) {
+  main div div .titulos-justify {
     display: flex;
-    align-items: center;
-    padding: 10px; }
+    justify-content: center; }
+    main div div .titulos-justify .tituloSurfboards {
+      color: black;
+      text-decoration: underline;
+      border: none;
+      background: none;
+      border-radius: none;
+      margin: 15px;
+      display: flex;
+      align-items: center;
+      padding: 10px; }
+    main div div .titulos-justify .tablasBox:not(.textBoxes) {
+      height: 95vh;
+      width: fit-content; } }
