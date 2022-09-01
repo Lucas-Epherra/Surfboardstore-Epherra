@@ -1,0 +1,53 @@
+//////////////////////////////////////////// media query para tablets (768px) ///////////////////////////////////////////////////////
+
+@media (min-width:767px) {
+
+    ////////////////////////////////////////////////// inicio shop_Tablas.html (768px) ///////////////////////////////////////////////
+
+    main {
+
+
+        div,
+        .principalBoxTablas {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .principalBox {
+                display: none;
+
+
+                div,
+                .tablasBox {
+                    max-width: 349.2px;
+                }
+            }
+        }
+    }
+
+}
+
+////////////////////////////////////////// INICIO shop_tablas.html (1440px) //////////////////////////////////////////////////
+
+main {
+
+    .principalBox {
+
+        .container-fluid {
+
+            .titulos-justify {
+                display: flex;
+                justify-content: center;
+
+                .tituloSurfboards {
+                    color: #000000;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,70 @@
+////////////////////////////////////////////////// CONTENEDOR MAIN SHOP TABLAS ////////////////////////////////////////////////////
+
+main {
+
+    .principalBox {
+
+        .container-fluid {
+
+            .titulos-justify {
+                display: flex;
+                justify-content: center;
+
+                .tituloSurfboards {
+                    color: #ffffffcb;
+                    border: #939493 0.5px solid;
+                    background-color: #c4c8c549;
+                    border-radius: 10px;
+                    margin: 30px 0px 15px 0px;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                }
+            }
+
+
+            /* contenedores de (shop_tablas)  */
+
+            .tablasBox:not(.textBoxes) {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                height: 80vh;
+                margin: 15px 0px 15px 0px;
+                background-color: rgba(255, 255, 255, 0.529);
+                border: solid black;
+                border-radius: 15px;
+
+                .tablaImg {
+                    height: 75%;
+
+                    &:hover {
+                        transform: scale(1.2, 1.1)
+                    }
+                }
+
+                div, .container-fluid {
+                p, .parrafo {
+                    width: 20vw;
+                } 
+                }
+
+                .textBoxes {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .tituloModelos {
+                        margin: 15px 0px 0px 0px;
+                        padding: 5px;
+                        font-size: x-large;
+                        color: #000000;
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+        }
+    }
+}

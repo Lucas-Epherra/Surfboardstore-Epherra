@@ -10,12 +10,16 @@
 //contenido principal (index.html)
 @import './layouts/inicio';
 
+//contenido principal (shop_tablas.html)
+@import './layouts/surfboards';
+
 //footer (all htmls)
 @import './footer/footer';
 
 ////////////////////////////////////////////////// MEDIAS QUERYS ////////////////////////////////////////////////////////////////
 
-//////////// 768px ////////////
-@import './medias-querys/medias-query-768px.scss';
-/////////// 1440px ////////////
-@import './medias-querys/medas-querys-1440px.scss';
+/////////// medias querys index ////////////
+@import './medias-querys/medias-query-inicio.scss';
+
+//////////// medias querys shop ////////////
+@import './medias-querys/medias-query-shop.scss';

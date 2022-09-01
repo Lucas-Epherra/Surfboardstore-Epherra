@@ -1,0 +1,76 @@
+///////////////////////////////////////////// inicia index html (768px) /////////////////////////////////////////////
+
+@media (min-width:767px) {
+
+    main {
+        .principalBox {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-image: url('../imagenes/https___www.lifeofpix.com_wp-content_uploads_2017_11_edited-32-of-66.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+
+            .tituloIndexBox {
+                display: flex;
+                width: 100%;
+                text-align: center;
+                align-items: center;
+                font-size: medium;
+
+
+                .title {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////// media query para laptop (910px)  /////////////////////////////////////////////
+@media (min-width:900px) {
+
+    ///////////////////////////////////////////////// index html  /////////////////////////////////////////////////
+    main {
+        .principalBox {
+            display: flex;
+            padding: 2rem 6rem 2rem 6rem;
+            justify-content: space-between;
+
+
+            .cardBox {
+                margin: 2rem;
+            }
+        }
+    }
+}
+
+
+
+/////////////////////////////////////////// inicio de index.html (1440px)  /////////////////////////////////////////////////
+
+@media (min-width:1200px) {
+
+
+    main {
+        .principalBox {
+            display: flex;
+            padding: 2rem 8rem 3rem 8rem;
+            justify-content: space-between;
+
+
+            .cardBox {
+                margin: 4rem;
+            }
+
+            .tituloIndexBox {
+                .title {
+                    color: black;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}
