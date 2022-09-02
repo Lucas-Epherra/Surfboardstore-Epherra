@@ -3,15 +3,11 @@
 main {
 
     .fondoAlternativo {
-            background-image: url('../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            padding: 2rem;
-          
+        @extend %fondoCharcoal;
+        padding: 2rem;
+
 
         .titulos-justify {
-            display: flex;
-            justify-content: center;
 
             .tituloUbicacion {
                 padding: 10px;
@@ -23,14 +19,12 @@ main {
 
 
         .mapaBox {
-            display: flex;
-            justify-content: center;
+            @extend %justify-center;
             height: 80vh;
             margin: 0px 15px 0px 15px;
 
             .mapaIframe {
-                display: flex;
-                justify-content: center;
+                @extend %justify-center;
                 margin: 2rem;
             }
         }

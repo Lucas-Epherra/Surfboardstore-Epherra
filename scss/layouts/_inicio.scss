@@ -16,15 +16,12 @@ div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    @extend %fondoCharcoal;
 
     /////////////////// titulo principal /////////////////////////////
 
     .titulos-justify {
-        display: flex;
-        justify-content: center;
+        @extend %justify-center;
 
 
         .title {

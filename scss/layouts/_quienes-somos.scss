@@ -3,9 +3,7 @@ main {
 
     .fondoMain {
         padding: 5px;
-        background-image: url('../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+        @extend %fondoCharcoal;
 
         div {
 
@@ -27,8 +25,7 @@ main {
                 }
 
                 .tituloFotos {
-                    display: flex;
-                    justify-content: center;
+                    @extend %justify-center;
                     color: black;
                     margin: 0px;
                     text-decoration: underline;
@@ -51,11 +48,8 @@ main {
                     }
                 }
 
-
-
                 .imagenesBox {
-                    display: flex;
-                    justify-content: center;
+                    @extend %justify-center;
 
                     .imagenQuienes {
                         border: black solid 4px;

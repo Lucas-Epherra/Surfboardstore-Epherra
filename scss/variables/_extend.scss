@@ -1,0 +1,13 @@
+//creacion extends
+
+%fondoCharcoal {
+    background-image: url('../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+%justify-center {
+    display: flex;
+    justify-content: center;
+}

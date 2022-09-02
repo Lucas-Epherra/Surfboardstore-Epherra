@@ -8,6 +8,15 @@
   * a {
     color: black; }
 
+.principalBox, main .fondoAlternativo, main .fondoMain {
+  background-image: url("../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.principalBox .titulos-justify, main .principalBox div .tablasBox:not(.textBoxes) .textBoxes, main .fondoAlternativo .mapaBox, main .fondoAlternativo .mapaBox .mapaIframe, main .fondoMain div .quienesCuerpo .tituloFotos, main .fondoMain div .quienesCuerpo .imagenesBox, main .fondoAlternativo div .formBox {
+  display: flex;
+  justify-content: center; }
+
 /* ---------------------------------- barra de navegacion (all html) ----------------------------------------  */
 nav {
   background: linear-gradient(to right, #000000, #303030, #4e4e4e); }
@@ -42,20 +51,14 @@ div .bannerSize {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background-image: url("../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
-  .principalBox .titulos-justify {
-    display: flex;
-    justify-content: center; }
-    .principalBox .titulos-justify .title {
-      margin-top: 5vh;
-      text-align: center;
-      color: #c4c8c5;
-      font-weight: 800;
-      font-style: italic;
-      width: fit-content; }
+  align-items: center; }
+  .principalBox .titulos-justify .title {
+    margin-top: 5vh;
+    text-align: center;
+    color: #c4c8c5;
+    font-weight: 800;
+    font-style: italic;
+    width: fit-content; }
   .principalBox .imagenes {
     height: 30vh;
     border: #93949334 0.5px;
@@ -86,19 +89,13 @@ main .principalBox {
   padding: 0.5rem; }
   main .principalBox div {
     /* contenedores de (shop_tablas)  */ }
-    main .principalBox div .titulos-justify {
+    main .principalBox div .titulos-justify .tituloSurfboards {
+      color: #ffffff;
+      margin: 30px 0px 15px 0px;
       display: flex;
-      justify-content: center; }
-      main .principalBox div .titulos-justify .tituloSurfboards {
-        color: #ffffffcb;
-        border: #939493 0.5px solid;
-        background-color: #c4c8c549;
-        border-radius: 10px;
-        margin: 30px 0px 15px 0px;
-        display: flex;
-        align-items: center;
-        padding: 10px;
-        text-decoration: none; }
+      align-items: center;
+      padding: 10px;
+      text-decoration: none; }
     main .principalBox div .tablasBox:not(.textBoxes) {
       display: flex;
       flex-wrap: wrap;
@@ -115,8 +112,6 @@ main .principalBox {
           transform: scale(1.2, 1.1); }
       main .principalBox div .tablasBox:not(.textBoxes) .textBoxes {
         width: 100%;
-        display: flex;
-        justify-content: center;
         align-items: center; }
         main .principalBox div .tablasBox:not(.textBoxes) .textBoxes .tituloModelos {
           margin: 15px 0px 0px 0px;
@@ -129,33 +124,20 @@ main .principalBox {
 
 /* ---------------------------------- PAGINA UBICACION.HTML FIRST MOBILE (425PX) ------------------------------------ */
 main .fondoAlternativo {
-  background-image: url("../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 2rem; }
-  main .fondoAlternativo .titulos-justify {
-    display: flex;
-    justify-content: center; }
-    main .fondoAlternativo .titulos-justify .tituloUbicacion {
-      padding: 10px;
-      margin: 40px 10px 10px 10px;
-      color: #ffffff; }
+  main .fondoAlternativo .titulos-justify .tituloUbicacion {
+    padding: 10px;
+    margin: 40px 10px 10px 10px;
+    color: #ffffff; }
   main .fondoAlternativo .mapaBox {
-    display: flex;
-    justify-content: center;
     height: 80vh;
     margin: 0px 15px 0px 15px; }
     main .fondoAlternativo .mapaBox .mapaIframe {
-      display: flex;
-      justify-content: center;
       margin: 2rem; }
 
 /* ---------------------------------- PAGINA QUIENES_SOMOS FIRST MOBILE(425PX) ------------------------------------- */
 main .fondoMain {
-  padding: 5px;
-  background-image: url("../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  padding: 5px; }
   main .fondoMain div .quienesCuerpo {
     background-color: #e4e0e0de;
     padding: 2rem;
@@ -168,8 +150,6 @@ main .fondoMain {
       text-align: center;
       font-weight: 500; }
     main .fondoMain div .quienesCuerpo .tituloFotos {
-      display: flex;
-      justify-content: center;
       color: black;
       margin: 0px;
       text-decoration: underline; }
@@ -186,14 +166,11 @@ main .fondoMain {
         padding: 0.5rem;
         border: #00000092 0.2px solid;
         border-radius: 10px; }
-    main .fondoMain div .quienesCuerpo .imagenesBox {
-      display: flex;
-      justify-content: center; }
-      main .fondoMain div .quienesCuerpo .imagenesBox .imagenQuienes {
-        border: black solid 4px;
-        border-radius: 10px;
-        margin-top: 15px;
-        margin-bottom: 15px; }
+    main .fondoMain div .quienesCuerpo .imagenesBox .imagenQuienes {
+      border: black solid 4px;
+      border-radius: 10px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
 
 /* ---------------------------------- PAGINA CONTACTO.html FIRST MOBILE (425px) ------------------------------------- */
 main .fondoAlternativo div .titulos-justify .contactoTitulo {
@@ -203,8 +180,6 @@ main .fondoAlternativo div .titulos-justify .contactoTitulo {
   color: #ffffff; }
 
 main .fondoAlternativo div .formBox {
-  display: flex;
-  justify-content: center;
   border-radius: 15px; }
   main .fondoAlternativo div .formBox .formulario {
     align-self: center;

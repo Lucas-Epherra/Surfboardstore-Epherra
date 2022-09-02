@@ -16,8 +16,7 @@ main {
             }
 
             .formBox {
-                display: flex;
-                justify-content: center;
+                @extend %justify-center;
                 border-radius: 15px;
 
 

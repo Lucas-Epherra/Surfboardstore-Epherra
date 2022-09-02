@@ -1,8 +1,19 @@
-//reseteo css
-@import './variables/reset';
-
-//variables
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    
+    a {
+        color: black;
+      }
+}
+/////////variables/////////
 @import './variables/variables';
+@import './variables/extend';
+@import './variables/mixins';
 
 //header (all htmls)
 @import './header/header';
