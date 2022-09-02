@@ -16,7 +16,7 @@ main {
             }
 
             .formBox {
-                @extend %justify-center;
+                @include justify-center(column,nowrap,center);
                 border-radius: 15px;
 
 

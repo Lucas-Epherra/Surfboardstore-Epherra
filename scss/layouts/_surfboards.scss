@@ -26,7 +26,7 @@ main {
                 flex-wrap: wrap;
                 justify-content: space-evenly;
                 width: 95vw;
-                height: 82vh;
+                height: 81vh;
                 margin: 15px 0px 15px 0px;
                 background-color: rgba(255, 255, 255, 0.529);
                 border: solid black;
@@ -43,7 +43,7 @@ main {
 
                 .textBoxes {
                     width: 100%;
-                    @extend %justify-center;
+                    @include justify-center(column,nowrap,center);
                     align-items: center;
 
                     .tituloModelos {
@@ -51,7 +51,6 @@ main {
                         padding: 5px;
                         font-size: x-large;
                         color: #000000;
-                        text-decoration: underline;
                     }
 
                 }

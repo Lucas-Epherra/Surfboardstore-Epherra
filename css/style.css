@@ -13,10 +13,6 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
-.principalBox .titulos-justify, main .principalBox div .tablasBox:not(.textBoxes) .textBoxes, main .fondoAlternativo .mapaBox, main .fondoAlternativo .mapaBox .mapaIframe, main .fondoMain div .quienesCuerpo .tituloFotos, main .fondoMain div .quienesCuerpo .imagenesBox, main .fondoAlternativo div .formBox {
-  display: flex;
-  justify-content: center; }
-
 /* ---------------------------------- barra de navegacion (all html) ----------------------------------------  */
 nav {
   background: linear-gradient(to right, #000000, #303030, #4e4e4e); }
@@ -47,18 +43,24 @@ div .bannerSize {
   width: 100%; }
 
 .principalBox {
-  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .principalBox .titulos-justify .title {
-    margin-top: 5vh;
-    text-align: center;
-    color: #c4c8c5;
-    font-weight: 800;
-    font-style: italic;
-    width: fit-content; }
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+  .principalBox .titulos-justify {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    .principalBox .titulos-justify .title {
+      margin-top: 5vh;
+      text-align: center;
+      color: #ffffff;
+      font-weight: 800;
+      font-style: italic;
+      width: fit-content; }
   .principalBox .imagenes {
     height: 30vh;
     border: #93949334 0.5px;
@@ -78,8 +80,10 @@ div .bannerSize {
     background-image: linear-gradient(to right, #000000, #303030, #4e4e4e);
     border: #00000044 0.5px solid;
     border-radius: 10px;
-    display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
+    align-items: none;
+    display: flex;
     justify-content: center;
     width: fit-content; }
   .principalBox .botonMain {
@@ -101,7 +105,7 @@ main .principalBox {
       flex-wrap: wrap;
       justify-content: space-evenly;
       width: 95vw;
-      height: 82vh;
+      height: 81vh;
       margin: 15px 0px 15px 0px;
       background-color: rgba(255, 255, 255, 0.529);
       border: solid black;
@@ -112,27 +116,47 @@ main .principalBox {
           transform: scale(1.2, 1.1); }
       main .principalBox div .tablasBox:not(.textBoxes) .textBoxes {
         width: 100%;
+        flex-wrap: column;
+        flex-direction: nowrap;
+        align-items: center;
+        display: flex;
+        justify-content: center;
         align-items: center; }
         main .principalBox div .tablasBox:not(.textBoxes) .textBoxes .tituloModelos {
           margin: 15px 0px 0px 0px;
           padding: 5px;
           font-size: x-large;
-          color: #000000;
-          text-decoration: underline; }
+          color: #000000; }
       main .principalBox div .tablasBox:not(.textBoxes) div span .text-alignment {
         text-align: center; }
 
 /* ---------------------------------- PAGINA UBICACION.HTML FIRST MOBILE (425PX) ------------------------------------ */
 main .fondoAlternativo {
   padding: 2rem; }
-  main .fondoAlternativo .titulos-justify .tituloUbicacion {
-    padding: 10px;
-    margin: 40px 10px 10px 10px;
-    color: #ffffff; }
+  main .fondoAlternativo .titulos-justify {
+    flex-wrap: column;
+    flex-direction: nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    main .fondoAlternativo .titulos-justify .tituloUbicacion {
+      padding: 10px;
+      margin: 40px 10px 10px 10px;
+      color: #ffffff; }
   main .fondoAlternativo .mapaBox {
+    flex-wrap: column;
+    flex-direction: nowrap;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     height: 80vh;
     margin: 0px 15px 0px 15px; }
     main .fondoAlternativo .mapaBox .mapaIframe {
+      flex-wrap: column;
+      flex-direction: nowrap;
+      align-items: center;
+      display: flex;
+      justify-content: center;
       margin: 2rem; }
 
 /* ---------------------------------- PAGINA QUIENES_SOMOS FIRST MOBILE(425PX) ------------------------------------- */
@@ -150,6 +174,11 @@ main .fondoMain {
       text-align: center;
       font-weight: 500; }
     main .fondoMain div .quienesCuerpo .tituloFotos {
+      flex-wrap: column;
+      flex-direction: nowrap;
+      align-items: center;
+      display: flex;
+      justify-content: center;
       color: black;
       margin: 0px;
       text-decoration: underline; }
@@ -166,11 +195,17 @@ main .fondoMain {
         padding: 0.5rem;
         border: #00000092 0.2px solid;
         border-radius: 10px; }
-    main .fondoMain div .quienesCuerpo .imagenesBox .imagenQuienes {
-      border: black solid 4px;
-      border-radius: 10px;
-      margin-top: 15px;
-      margin-bottom: 15px; }
+    main .fondoMain div .quienesCuerpo .imagenesBox {
+      flex-wrap: column;
+      flex-direction: nowrap;
+      align-items: center;
+      display: flex;
+      justify-content: center; }
+      main .fondoMain div .quienesCuerpo .imagenesBox .imagenQuienes {
+        border: black solid 4px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px; }
 
 /* ---------------------------------- PAGINA CONTACTO.html FIRST MOBILE (425px) ------------------------------------- */
 main .fondoAlternativo div .titulos-justify .contactoTitulo {
@@ -180,6 +215,11 @@ main .fondoAlternativo div .titulos-justify .contactoTitulo {
   color: #ffffff; }
 
 main .fondoAlternativo div .formBox {
+  flex-wrap: column;
+  flex-direction: nowrap;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   border-radius: 15px; }
   main .fondoAlternativo div .formBox .formulario {
     align-self: center;

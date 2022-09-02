@@ -11,23 +11,18 @@ div {
 
 //////////////////////// CONTENEDOR MAIN ////////////////////////////////
 .principalBox {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include justify-center(wrap,column,center);
     @extend %fondoCharcoal;
 
     /////////////////// titulo principal /////////////////////////////
 
     .titulos-justify {
-        @extend %justify-center;
-
+        @include justify-center (nowrap,column,center);
 
         .title {
             margin-top: 5vh;
             text-align: center;
-            color: #c4c8c5;
+            color: #ffffff;
             font-weight: 800;
             font-style: italic;
             width: fit-content;
@@ -65,9 +60,7 @@ div {
         background-image: linear-gradient(to right, #000000, #303030, #4e4e4e);
         border: #00000044 0.5px solid;
         border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include justify-center (wrap,column,none);
         width: fit-content;
     }
 

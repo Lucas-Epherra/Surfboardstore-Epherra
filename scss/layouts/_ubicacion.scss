@@ -6,8 +6,8 @@ main {
         @extend %fondoCharcoal;
         padding: 2rem;
 
-
         .titulos-justify {
+            @include justify-center(column,nowrap,center);
 
             .tituloUbicacion {
                 padding: 10px;
@@ -16,15 +16,13 @@ main {
             }
         }
 
-
-
         .mapaBox {
-            @extend %justify-center;
+            @include justify-center(column,nowrap,center);
             height: 80vh;
             margin: 0px 15px 0px 15px;
 
             .mapaIframe {
-                @extend %justify-center;
+                @include justify-center(column,nowrap,center);
                 margin: 2rem;
             }
         }
