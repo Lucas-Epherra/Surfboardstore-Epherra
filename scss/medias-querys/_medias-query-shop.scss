@@ -1,4 +1,39 @@
 //////////////////////////////////////////// media query para tablets (768px) ///////////////////////////////////////////////////////
+@media (min-width:375px) {
+    main {
+        .principalBoxTablas {
+            padding: 1rem;
+
+            .tablasBox {
+
+                max-width: 90vw;
+
+
+            }
+
+        }
+    }
+}
+
+
+
+
+@media (min-width:445px) {
+    main {
+        .principalBoxTablas {
+            padding: 1rem;
+
+            .tablasBox {
+
+                max-width: 80vw;
+
+
+            }
+
+        }
+    }
+
+}
 
 @media (min-width:767px) {
 
@@ -11,6 +46,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
+            padding: 25px;
 
             div {
 
@@ -32,8 +68,12 @@
             }
 
             .tablasBox:not(.textBoxes) {
-                height: 90vh;
-                width: 50vw;
+                max-width: 50vw;
+          
+                .tablaImg {
+                    height: 65%;
+                }
+
             }
         }
     }
@@ -67,9 +107,22 @@
                     }
 
                     .tablasBox:not(.textBoxes) {
-                        height: 95vh;
-                        width:fit-content;
+                        max-width: 40vw;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1440px) {
+    main {
+
+        div {
+
+            div {
+                .tablasBox:not(.textBoxes) {
+                    max-width: 35vw;
                 }
             }
         }

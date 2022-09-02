@@ -1,7 +1,8 @@
 ////////////////////////////////////////////////// CONTENEDOR MAIN SHOP TABLAS ////////////////////////////////////////////////////
 
 main {
-    div {
+    .principalBox {
+        padding:0.5rem;
 
         div {
 
@@ -30,7 +31,7 @@ main {
                 flex-wrap: wrap;
                 justify-content: space-evenly;
                 width: 95vw;
-                height: 90vh;
+                height: 85vh;
                 margin: 15px 0px 15px 0px;
                 background-color: rgba(255, 255, 255, 0.529);
                 border: solid black;
@@ -38,7 +39,7 @@ main {
 
 
                 .tablaImg {
-                    height: 75%;
+                    height: 70%;
 
                     &:hover {
                         transform: scale(1.2, 1.1)
