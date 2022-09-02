@@ -144,17 +144,17 @@ main .fondoAlternativo {
       margin: 40px 10px 10px 10px;
       color: #ffffff; }
   main .fondoAlternativo .mapaBox {
-    flex-wrap: column;
-    flex-direction: nowrap;
-    align-items: center;
+    flex-wrap: none;
+    flex-direction: none;
+    align-items: none;
     display: flex;
     justify-content: center;
     height: 80vh;
     margin: 0px 15px 0px 15px; }
     main .fondoAlternativo .mapaBox .mapaIframe {
-      flex-wrap: column;
-      flex-direction: nowrap;
-      align-items: center;
+      flex-wrap: none;
+      flex-direction: none;
+      align-items: none;
       display: flex;
       justify-content: center;
       margin: 2rem; }
@@ -375,10 +375,15 @@ footer {
     max-width: 35vw; } }
 
 @media (max-width: 375px) {
-  .fondoMain {
+  main .fondoMain {
     padding: 2.5px; }
-    .fondoMain div .quienesCuerpo {
+    main .fondoMain div .quienesCuerpo {
       padding: 5px; }
-      .fondoMain div .quienesCuerpo span .tituloQuienes {
+      main .fondoMain div .quienesCuerpo span .tituloQuienes {
         font-size: large;
         font-weight: 500; } }
+
+@media (max-width: 335px) {
+  main .fondoAlternativo span .tituloUbicacion {
+    font-size: large;
+    font-weight: 500; } }

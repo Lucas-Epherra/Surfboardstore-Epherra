@@ -17,12 +17,12 @@ main {
         }
 
         .mapaBox {
-            @include justify-center(column,nowrap,center);
+            @include justify-center(none,none,none);
             height: 80vh;
             margin: 0px 15px 0px 15px;
 
             .mapaIframe {
-                @include justify-center(column,nowrap,center);
+                @include justify-center(none,none,none);
                 margin: 2rem;
             }
         }

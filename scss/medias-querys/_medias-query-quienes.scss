@@ -1,18 +1,20 @@
 @media (max-width:375px) {
 
-    .fondoMain {
-        padding: 2.5px;
-        
-        div {
+    main {
+        .fondoMain {
+            padding: 2.5px;
 
-           .quienesCuerpo {
-            padding: 5px;
+            div {
 
-                span {
+                .quienesCuerpo {
+                    padding: 5px;
 
-                    .tituloQuienes {
-              font-size: large;
-              font-weight: 500;
+                    span {
+
+                        .tituloQuienes {
+                            font-size: large;
+                            font-weight: 500;
+                        }
                     }
                 }
             }
