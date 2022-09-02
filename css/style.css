@@ -124,6 +124,28 @@ main div div {
     main div div .tablasBox:not(.textBoxes) div span .text-alignment {
       text-align: center; }
 
+/* ---------------------------------- PAGINA UBICACION.HTML FIRST MOBILE (425PX) ------------------------------------ */
+main .fondoAlternativo {
+  background-image: url("../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  main .fondoAlternativo .titulos-justify {
+    display: flex;
+    justify-content: center; }
+    main .fondoAlternativo .titulos-justify .tituloUbicacion {
+      padding: 10px;
+      margin: 40px 10px 10px 10px;
+      color: #ffffff; }
+  main .fondoAlternativo .mapaBox {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    margin: 0px 15px 0px 15px; }
+    main .fondoAlternativo .mapaBox .mapaIframe {
+      display: flex;
+      justify-content: center;
+      margin: 2rem; }
+
 /* ---------------------------------- footer (all html) ----------------------------------------  */
 footer {
   background: linear-gradient(to right, #000000, #303030, #4e4e4e);

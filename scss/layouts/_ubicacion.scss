@@ -1,0 +1,38 @@
+/* ---------------------------------- PAGINA UBICACION.HTML FIRST MOBILE (425PX) ------------------------------------ */
+
+main {
+
+    .fondoAlternativo {
+            background-image: url('../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+          
+
+        .titulos-justify {
+            display: flex;
+            justify-content: center;
+
+            .tituloUbicacion {
+                padding: 10px;
+                margin: 40px 10px 10px 10px;
+                color: #ffffff;
+            }
+        }
+
+
+
+        .mapaBox {
+            display: flex;
+            justify-content: center;
+            height: 80vh;
+            margin: 0px 15px 0px 15px;
+
+            .mapaIframe {
+                display: flex;
+                justify-content: center;
+                margin: 2rem;
+            }
+        }
+
+    }
+}
