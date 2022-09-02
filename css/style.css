@@ -151,42 +151,49 @@ main .fondoAlternativo {
       margin: 2rem; }
 
 /* ---------------------------------- PAGINA QUIENES_SOMOS FIRST MOBILE(425PX) ------------------------------------- */
-main .fondoAlternativo div .quienesCuerpo {
-  background-color: #e4e0e0de;
-  padding: 2rem;
-  margin: 1rem;
-  border-radius: 10px; }
-  main .fondoAlternativo div .quienesCuerpo .titulos-justify .tituloQuienes {
-    margin-top: 15px;
-    padding: 7px;
-    color: black; }
-  main .fondoAlternativo div .quienesCuerpo .tituloFotos {
-    display: flex;
-    justify-content: center;
-    color: black;
-    margin: 0px;
-    text-decoration: underline; }
-  main .fondoAlternativo div .quienesCuerpo .parrafoUnoBox {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    padding: 10px; }
-    main .fondoAlternativo div .quienesCuerpo .parrafoUnoBox .parrafos {
-      font-weight: 500;
-      font-size: larger;
-      color: black;
-      padding: 0.5rem;
-      border: #00000092 0.2px solid;
-      border-radius: 10px; }
-  main .fondoAlternativo div .quienesCuerpo .imagenesBox {
-    display: flex;
-    justify-content: center; }
-    main .fondoAlternativo div .quienesCuerpo .imagenesBox .imagenQuienes {
-      border: black solid 4px;
-      border-radius: 10px;
+main .fondoMain {
+  padding: 5px;
+  background-image: url("../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  main .fondoMain div .quienesCuerpo {
+    background-color: #e4e0e0de;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px; }
+    main .fondoMain div .quienesCuerpo span .tituloQuienes {
       margin-top: 15px;
-      margin-bottom: 15px; }
+      padding: 7px;
+      color: black;
+      text-align: center;
+      font-weight: 500; }
+    main .fondoMain div .quienesCuerpo .tituloFotos {
+      display: flex;
+      justify-content: center;
+      color: black;
+      margin: 0px;
+      text-decoration: underline; }
+    main .fondoMain div .quienesCuerpo .parrafoUnoBox {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      padding: 10px; }
+      main .fondoMain div .quienesCuerpo .parrafoUnoBox .parrafos {
+        font-weight: 500;
+        font-size: larger;
+        color: black;
+        padding: 0.5rem;
+        border: #00000092 0.2px solid;
+        border-radius: 10px; }
+    main .fondoMain div .quienesCuerpo .imagenesBox {
+      display: flex;
+      justify-content: center; }
+      main .fondoMain div .quienesCuerpo .imagenesBox .imagenQuienes {
+        border: black solid 4px;
+        border-radius: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px; }
 
 /* ---------------------------------- PAGINA CONTACTO.html FIRST MOBILE (425px) ------------------------------------- */
 main .fondoAlternativo div .titulos-justify .contactoTitulo {
@@ -351,3 +358,12 @@ footer {
 @media (min-width: 1440px) {
   main div div .tablasBox:not(.textBoxes) {
     max-width: 35vw; } }
+
+@media (max-width: 375px) {
+  .fondoMain {
+    padding: 2.5px; }
+    .fondoMain div .quienesCuerpo {
+      padding: 5px; }
+      .fondoMain div .quienesCuerpo span .tituloQuienes {
+        font-size: large;
+        font-weight: 500; } }

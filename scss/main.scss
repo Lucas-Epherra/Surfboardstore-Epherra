@@ -1,8 +1,8 @@
 //reseteo css
-@import './base/reset';
+@import './variables/reset';
 
 //variables
-@import './base/variables';
+@import './variables/variables';
 
 //header (all htmls)
 @import './header/header';
@@ -32,3 +32,6 @@
 
 //////////// medias querys shop ////////////
 @import './medias-querys/medias-query-shop.scss';
+
+/////////// medias querys quienes somos ///////////////
+@import './medias-querys/medias-query-quienes';

@@ -1,8 +1,11 @@
 /* ---------------------------------- PAGINA QUIENES_SOMOS FIRST MOBILE(425PX) ------------------------------------- */
 main {
 
-    .fondoAlternativo {
-
+    .fondoMain {
+        padding: 5px;
+        background-image: url('../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
 
         div {
 
@@ -12,12 +15,14 @@ main {
                 margin: 1rem;
                 border-radius: 10px;
 
-                .titulos-justify {
+                span {
 
                     .tituloQuienes {
                         margin-top: 15px;
                         padding: 7px;
                         color: black;
+                        text-align: center;
+                        font-weight: 500;
                     }
                 }
 
