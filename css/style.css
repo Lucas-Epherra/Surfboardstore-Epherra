@@ -95,7 +95,8 @@ main div div {
       margin: 30px 0px 15px 0px;
       display: flex;
       align-items: center;
-      padding: 10px; }
+      padding: 10px;
+      text-decoration: none; }
   main div div .tablasBox:not(.textBoxes) {
     display: flex;
     flex-wrap: wrap;
@@ -128,7 +129,8 @@ main div div {
 main .fondoAlternativo {
   background-image: url("../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg");
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  padding: 2rem; }
   main .fondoAlternativo .titulos-justify {
     display: flex;
     justify-content: center; }
@@ -145,6 +147,90 @@ main .fondoAlternativo {
       display: flex;
       justify-content: center;
       margin: 2rem; }
+
+/* ---------------------------------- PAGINA QUIENES_SOMOS FIRST MOBILE(425PX) ------------------------------------- */
+main .fondoAlternativo div .quienesCuerpo {
+  background-color: #e4e0e0de;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 10px; }
+  main .fondoAlternativo div .quienesCuerpo .titulos-justify .tituloQuienes {
+    margin-top: 15px;
+    padding: 7px;
+    color: black; }
+  main .fondoAlternativo div .quienesCuerpo .tituloFotos {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin: 0px;
+    text-decoration: underline; }
+  main .fondoAlternativo div .quienesCuerpo .parrafoUnoBox {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 10px; }
+    main .fondoAlternativo div .quienesCuerpo .parrafoUnoBox .parrafos {
+      font-weight: 500;
+      font-size: larger;
+      color: black;
+      padding: 0.5rem;
+      border: #00000092 0.2px solid;
+      border-radius: 10px; }
+  main .fondoAlternativo div .quienesCuerpo .imagenesBox {
+    display: flex;
+    justify-content: center; }
+    main .fondoAlternativo div .quienesCuerpo .imagenesBox .imagenQuienes {
+      border: black solid 4px;
+      border-radius: 10px;
+      margin-top: 15px;
+      margin-bottom: 15px; }
+
+/* ---------------------------------- PAGINA CONTACTO.html FIRST MOBILE (425px) ------------------------------------- */
+main .fondoAlternativo div .titulos-justify .contactoTitulo {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  color: #ffffff; }
+
+main .fondoAlternativo div .formBox {
+  display: flex;
+  justify-content: center;
+  border-radius: 15px; }
+  main .fondoAlternativo div .formBox .formulario {
+    align-self: center;
+    background-color: #d3d3d396;
+    border: rgba(255, 255, 255, 0.438) solid 3px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    width: fit-content; }
+    main .fondoAlternativo div .formBox .formulario .boton {
+      background-color: #c4c8c5;
+      font-weight: 600;
+      padding: 4px;
+      border-radius: 10px;
+      color: black; }
+      main .fondoAlternativo div .formBox .formulario .boton:hover {
+        background-color: #ffffff21;
+        padding: 2px;
+        border-radius: 10px;
+        font-weight: 600;
+        border: 1px back solid;
+        color: black; }
+    main .fondoAlternativo div .formBox .formulario .inputs {
+      background-color: #c4c8c5;
+      font-weight: 600;
+      padding: 2px;
+      border-radius: 10px; }
+      main .fondoAlternativo div .formBox .formulario .inputs::placeholder {
+        color: black;
+        font-weight: 500; }
+      main .fondoAlternativo div .formBox .formulario .inputs:hover {
+        background-color: #939493;
+        transition: 1ms; }
+    main .fondoAlternativo div .formBox .formulario .label {
+      color: black; }
 
 /* ---------------------------------- footer (all html) ----------------------------------------  */
 footer {
@@ -219,7 +305,6 @@ footer {
       justify-content: center; }
       main .principalBoxTablas div .titulos-justify .tituloSurfboards {
         color: black;
-        text-decoration: underline;
         border: none;
         background: none;
         border-radius: none;
@@ -237,7 +322,6 @@ footer {
     justify-content: center; }
     main div div .titulos-justify .tituloSurfboards {
       color: black;
-      text-decoration: underline;
       border: none;
       background: none;
       border-radius: none;

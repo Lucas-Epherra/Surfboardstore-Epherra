@@ -1,0 +1,78 @@
+/* ---------------------------------- PAGINA CONTACTO.html FIRST MOBILE (425px) ------------------------------------- */
+main {
+
+    .fondoAlternativo {
+
+        div {
+
+            .titulos-justify {
+
+                .contactoTitulo {
+                    margin-bottom: 15px;
+                    margin-top: 15px;
+                    padding: 10px;
+                    color: #ffffff;
+                }
+            }
+
+            .formBox {
+                display: flex;
+                justify-content: center;
+                border-radius: 15px;
+
+
+                .formulario {
+                    align-self: center;
+                    background-color: #d3d3d396;
+                    border: rgba(255, 255, 255, 0.438) solid 3px;
+                    padding: 15px;
+                    border-radius: 10px;
+                    margin-bottom: 2rem;
+                    width: fit-content;
+
+
+
+                    .boton {
+                        background-color: #c4c8c5;
+                        font-weight: 600;
+                        padding: 4px;
+                        border-radius: 10px;
+                        color: black;
+
+                        &:hover {
+                            background-color: #ffffff21;
+                            padding: 2px;
+                            border-radius: 10px;
+                            font-weight: 600;
+                            border: 1px back solid;
+                            color: black;
+                        }
+                    }
+
+                    .inputs {
+                        background-color: #c4c8c5;
+                        font-weight: 600;
+                        padding: 2px;
+                        border-radius: 10px;
+
+                        &::placeholder {
+                            color: rgb(0, 0, 0);
+                            font-weight: 500;
+                        }
+
+                        &:hover {
+                            background-color: #939493;
+                            transition: 1ms;
+                        }
+
+                    }
+
+                    .label {
+                        color: black;
+                    }
+
+                }
+            }
+        }
+    }
+}

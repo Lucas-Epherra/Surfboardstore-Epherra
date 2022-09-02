@@ -1,0 +1,66 @@
+/* ---------------------------------- PAGINA QUIENES_SOMOS FIRST MOBILE(425PX) ------------------------------------- */
+main {
+
+    .fondoAlternativo {
+
+
+        div {
+
+            .quienesCuerpo {
+                background-color: #e4e0e0de;
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 10px;
+
+                .titulos-justify {
+
+                    .tituloQuienes {
+                        margin-top: 15px;
+                        padding: 7px;
+                        color: black;
+                    }
+                }
+
+                .tituloFotos {
+                    display: flex;
+                    justify-content: center;
+                    color: black;
+                    margin: 0px;
+                    text-decoration: underline;
+                }
+
+                .parrafoUnoBox {
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    text-align: center;
+                    padding: 10px;
+
+                    .parrafos {
+                        font-weight: 500;
+                        font-size: larger;
+                        color: black;
+                        padding: 0.5rem;
+                        border: #00000092 0.2px solid;
+                        border-radius: 10px;
+                    }
+                }
+
+
+
+                .imagenesBox {
+                    display: flex;
+                    justify-content: center;
+
+                    .imagenQuienes {
+                        border: black solid 4px;
+                        border-radius: 10px;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+                }
+
+            }
+        }
+    }
+}
