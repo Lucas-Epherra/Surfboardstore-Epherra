@@ -29,3 +29,5 @@
 (5)_ Se coloco un titulo personalizado en la etiqueta title para cada html (nos sirve de guia).
 
 (6)_ Se estilizaron los encabezados h1 para darles un poco de vida (eran blanco neutro).
+
+(7)_ Se agrego sitemap.xml
