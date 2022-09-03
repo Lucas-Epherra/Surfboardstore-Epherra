@@ -13,13 +13,14 @@
   background-size: cover;
   background-repeat: no-repeat; }
 
-.principalBox .titulos-justify .title, main .principalBox div .titulos-justify .tituloSurfboards, main .fondoAlternativo .titulos-justify .tituloUbicacion, main .fondoAlternativo div .titulos-justify .contactoTitulo {
+.principalBox .titulos-justify .title, main .principalBox div .titulos-justify .tituloSurfboards, main .fondoAlternativo .titulos-justify .tituloUbicacion, main .fondoAlternativo div span .tituloQuienes, main .fondoAlternativo div .titulos-justify .contactoTitulo {
   color: #34baab;
   background-color: #8989896a;
   font-style: italic;
   font-weight: 600;
   transform: skewY(5deg);
-  padding: 1rem; }
+  padding: 1rem;
+  margin: 2rem; }
 
 /* ---------------------------------- barra de navegacion (all html) ----------------------------------------  */
 nav {
@@ -68,7 +69,6 @@ div .bannerSize {
     display: flex;
     justify-content: center; }
     .principalBox .titulos-justify .title {
-      margin-top: 5vh;
       text-align: center; }
   .principalBox .imagenes {
     height: 30vh;
@@ -89,7 +89,7 @@ div .bannerSize {
     margin: 15px 15px 15px 15px;
     padding: 10px;
     background-image: linear-gradient(to right, #000000, #303030, #4e4e4e);
-    border: #00000044 0.5px solid;
+    border: #34baaa1d 0.5px solid;
     border-radius: 10px;
     flex-wrap: wrap;
     flex-direction: column;
@@ -103,10 +103,8 @@ main .principalBox {
   main .principalBox div {
     /* contenedores de (shop_tablas)  */ }
     main .principalBox div .titulos-justify .tituloSurfboards {
-      margin: 30px 0px 15px 0px;
       display: flex;
-      align-items: center;
-      padding: 10px; }
+      align-items: center; }
     main .principalBox div .tablasBox:not(.textBoxes) {
       display: flex;
       flex-wrap: wrap;
@@ -146,8 +144,6 @@ main .fondoAlternativo {
     align-items: center;
     display: flex;
     justify-content: center; }
-    main .fondoAlternativo .titulos-justify .tituloUbicacion {
-      margin: 40px 10px 10px 10px; }
   main .fondoAlternativo .mapaBox {
     flex-wrap: none;
     flex-direction: none;
@@ -167,17 +163,13 @@ main .fondoAlternativo {
 /* ---------------------------------- PAGINA QUIENES_SOMOS FIRST MOBILE(425PX) ------------------------------------- */
 main .fondoAlternativo {
   padding: 5px; }
+  main .fondoAlternativo div span .tituloQuienes {
+    text-align: center; }
   main .fondoAlternativo div .quienesCuerpo {
     background-color: #e4e0e0de;
     padding: 2rem;
     margin: 1rem;
     border-radius: 10px; }
-    main .fondoAlternativo div .quienesCuerpo span .tituloQuienes {
-      margin-top: 15px;
-      padding: 7px;
-      color: black;
-      text-align: center;
-      font-weight: 500; }
     main .fondoAlternativo div .quienesCuerpo .tituloFotos {
       flex-wrap: column;
       flex-direction: nowrap;
@@ -213,10 +205,6 @@ main .fondoAlternativo {
         margin-bottom: 15px; }
 
 /* ---------------------------------- PAGINA CONTACTO.html FIRST MOBILE (425px) ------------------------------------- */
-main .fondoAlternativo div .titulos-justify .contactoTitulo {
-  margin-bottom: 15px;
-  margin-top: 15px; }
-
 main .fondoAlternativo div .formBox {
   flex-wrap: column;
   flex-direction: nowrap;

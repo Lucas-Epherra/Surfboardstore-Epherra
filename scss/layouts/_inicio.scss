@@ -20,7 +20,6 @@ div {
         @include justify-center (nowrap,column,center);
 
         .title {
-            margin-top: 5vh;
             text-align: center;
             @extend %titulos;
         }
@@ -57,7 +56,7 @@ div {
         margin: 15px 15px 15px 15px;
         padding: 10px;
         background-image: linear-gradient(to right, #000000, #303030, #4e4e4e);
-        border: #00000044 0.5px solid;
+        border: #34baaa1d 0.5px solid;
         border-radius: 10px;
         @include justify-center (wrap,column,none);
         width: fit-content;

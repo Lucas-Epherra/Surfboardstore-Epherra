@@ -10,7 +10,6 @@ main {
             @include justify-center(column,nowrap,center);
 
             .tituloUbicacion {
-                margin: 40px 10px 10px 10px;
                 @extend %titulos;
 
             }

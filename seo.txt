@@ -1,0 +1,31 @@
+(1)_ Se agrego la etiqueta meta keywords en todos los html:
+
+- index : surfboards, tablas, surf, shaper, uvasurfboards.
+
+- surfboards : tablas, surf, modelos, surfboards, longboard, funboard.
+
+- quienes-somos : shaper, fabrica, calidad, tablas, surfboards.
+
+- ubicacion : ubicacion, maps, donde estamos, uvasurfboards, surfboards.
+
+- contactanos : contactanos, instagram, whatsapp, telefono, facebook.
+
+(2)_ Se agrego la etiqueta meta description en todos los html:
+
+- index : Uva surfboards tiene el fin de mostrar los modelos de tablas de la marca uva surfboards y establecer una linea de contacto directo con el fabricante
+
+- surfboards : Se muestran modelos de tablas de surf, la marca uva posee un gran catalogo y variedad de tablas para todo tipo de niveles de surfista
+
+- quienes-somos : Somos una fabrica especializada en el diseño y fabricacion de tablas de surf de mas alta calidad y rendimiento en la argentina.
+
+- contactanos : Completa el formulario para contactarte con nosotros, tambien esta la opcion de comunicarse por las redes sociales (tocar iconos).
+
+- ubicacion : Nos encontramos en la ciudad de mar del plata.
+
+(3)_ Se optimizaron las imagenes (se redujo el peso de todos los archivos (manteniendo la calidad) ).
+
+(4)_ Se actualizo el logo favicon para que se vea mas agradable.
+
+(5)_ Se coloco un titulo personalizado en la etiqueta title para cada html (nos sirve de guia).
+
+(6)_ Se estilizaron los encabezados h1 para darles un poco de vida (eran blanco neutro).
