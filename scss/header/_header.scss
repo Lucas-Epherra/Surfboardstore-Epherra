@@ -29,14 +29,13 @@
                // estilos para las listas del nav
 
                .active {
-                   color: $letrasColor  !important;
-                   font-weight: 750 !important;
-
+                   color:$activeColor  !important;
+                   font-weight: 800 !important;
+                    text-decoration:overline;
 
                    &:hover {
-                       color: rgb(0, 0, 0) !important;
                        font-weight: 600;
-                       background-color: #ffffff8b;
+                       background-color: #6969698b !important;
                    }
                }
 
@@ -47,8 +46,13 @@
 
                    &:hover {
                        font-weight: 700;
-                       background-color: #ffffff8b;
+                       background-color: #c4c8c5;
+                       border-radius:2rem;
+                       padding: 6px;
+                       transform: scale(1.01,1.07);
                        color: rgb(0, 0, 0);
+                       transition: 0.2s;
+                       transition: ease-in-out;
                    }
                }
            }

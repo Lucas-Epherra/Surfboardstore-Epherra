@@ -7,16 +7,11 @@
             .tablasBox {
 
                 max-width: 90vw;
-
-
             }
 
         }
     }
 }
-
-
-
 
 @media (min-width:445px) {
     main {
@@ -26,7 +21,6 @@
             .tablasBox {
 
                 max-width: 80vw;
-
 
             }
 
@@ -48,28 +42,9 @@
             justify-content: space-around;
             padding: 25px;
 
-            div {
-
-                .titulos-justify {
-                    display: flex;
-                    justify-content: center;
-
-                    .tituloSurfboards {
-                        color: black;
-                        border: none;
-                        background: none;
-                        border-radius: none;
-                        margin: 15px;
-                        display: flex;
-                        align-items: center;
-                        padding: 10px;
-                    }
-                }
-            }
-
             .tablasBox:not(.textBoxes) {
                 max-width: 50vw;
-          
+
                 .tablaImg {
                     height: 65%;
                 }
@@ -91,24 +66,8 @@
 
             div {
 
-                .titulos-justify {
-                    display: flex;
-                    justify-content: center;
-
-                    .tituloSurfboards {
-                        color: black;
-                        border: none;
-                        background: none;
-                        border-radius: none;
-                        margin: 15px;
-                        display: flex;
-                        align-items: center;
-                        padding: 10px;
-                    }
-
-                    .tablasBox:not(.textBoxes) {
-                        max-width: 40vw;
-                    }
+                .tablasBox:not(.textBoxes) {
+                    max-width: 40vw;
                 }
             }
         }

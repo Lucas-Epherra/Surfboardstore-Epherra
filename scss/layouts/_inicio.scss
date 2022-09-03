@@ -12,7 +12,7 @@ div {
 //////////////////////// CONTENEDOR MAIN ////////////////////////////////
 .principalBox {
     @include justify-center(wrap,column,center);
-    @extend %fondoCharcoal;
+    @extend %fondoGrey;
 
     /////////////////// titulo principal /////////////////////////////
 
@@ -22,10 +22,7 @@ div {
         .title {
             margin-top: 5vh;
             text-align: center;
-            color: #ffffff;
-            font-weight: 800;
-            font-style: italic;
-            width: fit-content;
+            @extend %titulos;
         }
 
     }
@@ -42,13 +39,15 @@ div {
 
     .botonMain {
         background-color: #c4c8c563;
-        border: #3a3c3b89 1px solid;
+        border: #3a3c3b89 1px solid;  
+        margin: 5px;
 
         &:hover {
             background-color: #ffffff51;
             border: rgb(0, 0, 0) 0.5px solid;
             font-weight: 700;
             transform: scale(1.05, 1.1);
+            transition: 0.1ms;
         }
     }
 
@@ -62,10 +61,6 @@ div {
         border-radius: 10px;
         @include justify-center (wrap,column,none);
         width: fit-content;
-    }
-
-    .botonMain {
-        margin: 5px;
     }
 
 }

@@ -6,4 +6,17 @@
     background-repeat: no-repeat;
 }
 
+%fondoGrey {
+    background-image: url('../imagenes/teahub.io-elegant-iphone-wallpaper-2849092.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+%titulos {
+    color: #34baab;
+    background-color:#8989896a;
+    font-style: italic;
+    font-weight: 600;
+    transform: skewY(5deg);
+    padding: 1rem;
+}

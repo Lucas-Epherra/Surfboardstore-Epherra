@@ -9,12 +9,11 @@ main {
             .titulos-justify {
              
                 .tituloSurfboards {
-                    color: #ffffff;
+                    @extend %titulos;
                     margin: 30px 0px 15px 0px;
                     display: flex;
                     align-items: center;
                     padding: 10px;
-                    text-decoration: none;
                 }
             }
 

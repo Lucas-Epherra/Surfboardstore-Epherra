@@ -8,10 +8,18 @@
   * a {
     color: black; }
 
-.principalBox, main .fondoAlternativo, main .fondoMain {
-  background-image: url("../imagenes/charcol-black-wallpaper-background-Hecho-con-PosterMyWall.jpg");
+.principalBox, main .fondoAlternativo {
+  background-image: url("../imagenes/teahub.io-elegant-iphone-wallpaper-2849092.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
+
+.principalBox .titulos-justify .title, main .principalBox div .titulos-justify .tituloSurfboards, main .fondoAlternativo .titulos-justify .tituloUbicacion, main .fondoAlternativo div .titulos-justify .contactoTitulo {
+  color: #34baab;
+  background-color: #8989896a;
+  font-style: italic;
+  font-weight: 600;
+  transform: skewY(5deg);
+  padding: 1rem; }
 
 /* ---------------------------------- barra de navegacion (all html) ----------------------------------------  */
 nav {
@@ -24,20 +32,25 @@ nav {
     display: flex;
     align-items: flex-end; }
   nav div div .active {
-    color: rgba(255, 253, 253, 0.746) !important;
-    font-weight: 750 !important; }
+    color: #34baab !important;
+    font-weight: 800 !important;
+    text-decoration: overline; }
     nav div div .active:hover {
-      color: black !important;
       font-weight: 600;
-      background-color: #ffffff8b; }
+      background-color: #6969698b !important; }
   nav div div .nav-link {
     color: rgba(255, 253, 253, 0.746);
     font-weight: 500;
     font-size: large; }
     nav div div .nav-link:hover {
       font-weight: 700;
-      background-color: #ffffff8b;
-      color: black; }
+      background-color: #c4c8c5;
+      border-radius: 2rem;
+      padding: 6px;
+      transform: scale(1.01, 1.07);
+      color: black;
+      transition: 0.2s;
+      transition: ease-in-out; }
 
 div .bannerSize {
   width: 100%; }
@@ -56,11 +69,7 @@ div .bannerSize {
     justify-content: center; }
     .principalBox .titulos-justify .title {
       margin-top: 5vh;
-      text-align: center;
-      color: #ffffff;
-      font-weight: 800;
-      font-style: italic;
-      width: fit-content; }
+      text-align: center; }
   .principalBox .imagenes {
     height: 30vh;
     border: #93949334 0.5px;
@@ -68,12 +77,14 @@ div .bannerSize {
     margin-bottom: 10px; }
   .principalBox .botonMain {
     background-color: #c4c8c563;
-    border: #3a3c3b89 1px solid; }
+    border: #3a3c3b89 1px solid;
+    margin: 5px; }
     .principalBox .botonMain:hover {
       background-color: #ffffff51;
       border: black 0.5px solid;
       font-weight: 700;
-      transform: scale(1.05, 1.1); }
+      transform: scale(1.05, 1.1);
+      transition: 0.1ms; }
   .principalBox .cardBox {
     margin: 15px 15px 15px 15px;
     padding: 10px;
@@ -86,20 +97,16 @@ div .bannerSize {
     display: flex;
     justify-content: center;
     width: fit-content; }
-  .principalBox .botonMain {
-    margin: 5px; }
 
 main .principalBox {
   padding: 0.5rem; }
   main .principalBox div {
     /* contenedores de (shop_tablas)  */ }
     main .principalBox div .titulos-justify .tituloSurfboards {
-      color: #ffffff;
       margin: 30px 0px 15px 0px;
       display: flex;
       align-items: center;
-      padding: 10px;
-      text-decoration: none; }
+      padding: 10px; }
     main .principalBox div .tablasBox:not(.textBoxes) {
       display: flex;
       flex-wrap: wrap;
@@ -140,9 +147,7 @@ main .fondoAlternativo {
     display: flex;
     justify-content: center; }
     main .fondoAlternativo .titulos-justify .tituloUbicacion {
-      padding: 10px;
-      margin: 40px 10px 10px 10px;
-      color: #ffffff; }
+      margin: 40px 10px 10px 10px; }
   main .fondoAlternativo .mapaBox {
     flex-wrap: none;
     flex-direction: none;
@@ -160,20 +165,20 @@ main .fondoAlternativo {
       margin: 2rem; }
 
 /* ---------------------------------- PAGINA QUIENES_SOMOS FIRST MOBILE(425PX) ------------------------------------- */
-main .fondoMain {
+main .fondoAlternativo {
   padding: 5px; }
-  main .fondoMain div .quienesCuerpo {
+  main .fondoAlternativo div .quienesCuerpo {
     background-color: #e4e0e0de;
     padding: 2rem;
     margin: 1rem;
     border-radius: 10px; }
-    main .fondoMain div .quienesCuerpo span .tituloQuienes {
+    main .fondoAlternativo div .quienesCuerpo span .tituloQuienes {
       margin-top: 15px;
       padding: 7px;
       color: black;
       text-align: center;
       font-weight: 500; }
-    main .fondoMain div .quienesCuerpo .tituloFotos {
+    main .fondoAlternativo div .quienesCuerpo .tituloFotos {
       flex-wrap: column;
       flex-direction: nowrap;
       align-items: center;
@@ -182,26 +187,26 @@ main .fondoMain {
       color: black;
       margin: 0px;
       text-decoration: underline; }
-    main .fondoMain div .quienesCuerpo .parrafoUnoBox {
+    main .fondoAlternativo div .quienesCuerpo .parrafoUnoBox {
       display: flex;
       width: 100%;
       align-items: center;
       text-align: center;
       padding: 10px; }
-      main .fondoMain div .quienesCuerpo .parrafoUnoBox .parrafos {
+      main .fondoAlternativo div .quienesCuerpo .parrafoUnoBox .parrafos {
         font-weight: 500;
         font-size: larger;
         color: black;
         padding: 0.5rem;
         border: #00000092 0.2px solid;
         border-radius: 10px; }
-    main .fondoMain div .quienesCuerpo .imagenesBox {
+    main .fondoAlternativo div .quienesCuerpo .imagenesBox {
       flex-wrap: column;
       flex-direction: nowrap;
       align-items: center;
       display: flex;
       justify-content: center; }
-      main .fondoMain div .quienesCuerpo .imagenesBox .imagenQuienes {
+      main .fondoAlternativo div .quienesCuerpo .imagenesBox .imagenQuienes {
         border: black solid 4px;
         border-radius: 10px;
         margin-top: 15px;
@@ -210,9 +215,7 @@ main .fondoMain {
 /* ---------------------------------- PAGINA CONTACTO.html FIRST MOBILE (425px) ------------------------------------- */
 main .fondoAlternativo div .titulos-justify .contactoTitulo {
   margin-bottom: 15px;
-  margin-top: 15px;
-  padding: 10px;
-  color: #ffffff; }
+  margin-top: 15px; }
 
 main .fondoAlternativo div .formBox {
   flex-wrap: column;
@@ -285,19 +288,13 @@ footer {
   main .principalBox {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    background-image: url("../imagenes/https___www.lifeofpix.com_wp-content_uploads_2017_11_edited-32-of-66.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    flex-wrap: wrap; }
     main .principalBox .tituloIndexBox {
       display: flex;
       width: 100%;
       text-align: center;
       align-items: center;
-      font-size: medium; }
-      main .principalBox .tituloIndexBox .title {
-        color: black; } }
+      font-size: medium; } }
 
 @media (min-width: 900px) {
   main .principalBox {
@@ -313,10 +310,7 @@ footer {
     padding: 2rem 8rem 3rem 8rem;
     justify-content: space-between; }
     main .principalBox .cardBox {
-      margin: 4rem; }
-    main .principalBox .tituloIndexBox .title {
-      color: black;
-      font-weight: 900; } }
+      margin: 4rem; } }
 
 @media (min-width: 375px) {
   main .principalBoxTablas {
@@ -337,49 +331,25 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 25px; }
-    main .principalBoxTablas div .titulos-justify {
-      display: flex;
-      justify-content: center; }
-      main .principalBoxTablas div .titulos-justify .tituloSurfboards {
-        color: black;
-        border: none;
-        background: none;
-        border-radius: none;
-        margin: 15px;
-        display: flex;
-        align-items: center;
-        padding: 10px; }
     main .principalBoxTablas .tablasBox:not(.textBoxes) {
       max-width: 50vw; }
       main .principalBoxTablas .tablasBox:not(.textBoxes) .tablaImg {
         height: 65%; } }
 
 @media (min-width: 1200px) {
-  main div div .titulos-justify {
-    display: flex;
-    justify-content: center; }
-    main div div .titulos-justify .tituloSurfboards {
-      color: black;
-      border: none;
-      background: none;
-      border-radius: none;
-      margin: 15px;
-      display: flex;
-      align-items: center;
-      padding: 10px; }
-    main div div .titulos-justify .tablasBox:not(.textBoxes) {
-      max-width: 40vw; } }
+  main div div .tablasBox:not(.textBoxes) {
+    max-width: 40vw; } }
 
 @media (min-width: 1440px) {
   main div div .tablasBox:not(.textBoxes) {
     max-width: 35vw; } }
 
 @media (max-width: 375px) {
-  main .fondoMain {
+  main .fondoAlternativo {
     padding: 2.5px; }
-    main .fondoMain div .quienesCuerpo {
+    main .fondoAlternativo div .quienesCuerpo {
       padding: 5px; }
-      main .fondoMain div .quienesCuerpo span .tituloQuienes {
+      main .fondoAlternativo div .quienesCuerpo span .tituloQuienes {
         font-size: large;
         font-weight: 500; } }
 
